@@ -1,0 +1,14 @@
+(() => {
+  const root=document.querySelector('#admin-settings');
+  function validForm(value){try{const u=new URL(value);return u.protocol==='https:'&&((u.hostname==='docs.google.com'&&/^\/forms\/d\/(?:e\/)?[^/]+\/viewform$/.test(u.pathname))||(u.hostname==='forms.gle'&&u.pathname.length>1));}catch{return false;}}
+  const formUrl=window.B3_CONFIG.GOOGLE_FORM_URL;
+  if(validForm(formUrl)){
+    const link=document.createElement('a');link.href=formUrl;link.target='_blank';link.rel='noopener noreferrer';link.className='button secondary';link.textContent='開啟 Google 表單';document.querySelector('.top-actions').append(link);
+  }
+  if(!root)return;
+  root.innerHTML=`<p>這是本機連線設定面板，不是 Google 帳號登入或權限管理。設定只作用於目前瀏覽器；不會自動改變學員裝置。</p><form id="connection-form"><div class="field"><label for="admin-form-url">Google 表單填寫網址</label><input type="url" id="admin-form-url" placeholder="貼上 viewform 或 forms.gle 連結"><p>儲存後，每頁會出現「開啟 Google 表單」按鈕。表單回覆由 Google 表單自行儲存，不會自動匯入本網站 Dashboard。</p></div><div class="field"><label for="admin-api-url">Apps Script Web App 網址（選填）</label><input type="url" id="admin-api-url" placeholder="貼上部署後的 /exec 網址"><p>要讓網站任務直接寫入 Google 試算表並更新 Dashboard，請填入此網址。留空使用離線測試。</p></div><div class="button-row"><button class="button" type="submit">儲存連線設定</button><button class="button secondary" type="button" id="test-api">測試已儲存 API</button><button class="button secondary" type="button" id="reset-connection">恢復預設設定</button></div></form><p id="admin-status" role="status" aria-live="polite"></p>`;
+  const $=s=>root.querySelector(s);$('#admin-form-url').value=formUrl;$('#admin-api-url').value=B3_CONFIG.APPS_SCRIPT_WEB_APP_URL;
+  $('#connection-form').addEventListener('submit',e=>{e.preventDefault();const formUrl=$('#admin-form-url').value.trim(),apiUrl=$('#admin-api-url').value.trim();if(formUrl&&!validForm(formUrl)){$('#admin-status').textContent='請貼上 Google 表單填寫連結（viewform 或 forms.gle），不是試算表或表單編輯網址。';return;}if(apiUrl&&!/^https:\/\/script\.google\.com\/macros\/s\/[^/?#]+\/exec$/.test(apiUrl)){$('#admin-status').textContent='請提供有效的 Apps Script /exec 網址。';return;}try{localStorage.setItem(B3_CONNECTION_KEY,JSON.stringify({formUrl,apiUrl}));location.reload();}catch{$('#admin-status').textContent='儲存失敗，請確認瀏覽器允許本機儲存。';}});
+  $('#test-api').addEventListener('click',async e=>{if(B3API.mode()==='local'){$('#admin-status').textContent='目前是離線模式，請先儲存 Apps Script URL。';return;}e.target.disabled=true;$('#admin-status').textContent='測試中……';try{const r=await B3API.getDashboardData();if(!r.data?.projection)throw Error('回應不是本網站使用的 API 格式');$('#admin-status').textContent='連線成功，可以讀取 Dashboard。此測試不會新增資料。';}catch(error){$('#admin-status').textContent='連線失敗：'+error.message;}finally{e.target.disabled=false;}});
+  $('#reset-connection').addEventListener('click',()=>{try{localStorage.removeItem(B3_CONNECTION_KEY);location.reload();}catch{$('#admin-status').textContent='無法清除設定。';}});
+})();
