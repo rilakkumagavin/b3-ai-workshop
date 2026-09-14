@@ -91,12 +91,14 @@
     }
     const url = String(config().APPS_SCRIPT_WEB_APP_URL).trim();
     if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/?#]+\/exec$/.test(url)) throw new Error('請在 config.js 設定有效的 Apps Script /exec 網址。');
+    const requestId='r-'+crypto.randomUUID();
+    const requestUrl=url+(action==='getDashboardData'?'?action=getDashboardData':'?action=getReceipt&requestId='+requestId);
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), config().REQUEST_TIMEOUT_MS || 20000);
     try {
       // JSON body in text/plain avoids an application/json CORS preflight in GAS.
-      const response = await fetch(url, { method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
-        body:JSON.stringify({action, payload:sheetData || {}}), redirect:'follow', signal:controller.signal });
+      const response = await fetch(requestUrl, { method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
+        body:JSON.stringify({action, requestId, payload:sheetData || {}}), redirect:'follow', signal:controller.signal });
       if (!response.ok) throw new Error('HTTP ' + response.status + '，請檢查部署存取權限。');
       let result;
       try { result = await response.json(); } catch { throw new Error('伺服器未回傳 JSON，請確認部署網址及登入權限。'); }
