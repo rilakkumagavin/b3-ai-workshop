@@ -1,0 +1,119 @@
+{
+  "participants": [
+    "participant_id",
+    "timestamp",
+    "name",
+    "school",
+    "group_id",
+    "role"
+  ],
+  "word_cloud": [
+    "timestamp",
+    "participant_id",
+    "name",
+    "group_id",
+    "mood",
+    "keyword",
+    "note"
+  ],
+  "learning_goals": [
+    "timestamp",
+    "participant_id",
+    "name",
+    "group_id",
+    "goal",
+    "reason"
+  ],
+  "guide_treasure": [
+    "timestamp",
+    "group_id",
+    "sail_chapter",
+    "sail_quote",
+    "keel_quote",
+    "hull_chapter",
+    "hull_reason"
+  ],
+  "ai_literacy_selfcheck": [
+    "timestamp",
+    "participant_id",
+    "name",
+    "group_id",
+    "ethics_score",
+    "tech_score",
+    "teaching_score",
+    "professional_score",
+    "strength",
+    "growth_need"
+  ],
+  "risk_case_cards": [
+    "timestamp",
+    "group_id",
+    "case_id",
+    "risk_type",
+    "strategy",
+    "student_reminder",
+    "practice_activity"
+  ],
+  "risk_lesson_tasks": [
+    "timestamp",
+    "group_id",
+    "grade_level",
+    "risk_topic",
+    "student_scenario",
+    "student_task",
+    "teacher_reminder",
+    "learning_evidence"
+  ],
+  "prompt_revision": [
+    "timestamp",
+    "group_id",
+    "lesson_title",
+    "ai_entry_point",
+    "original_prompt",
+    "gives_direct_answer",
+    "requires_reasoning",
+    "requires_comparison",
+    "requires_own_words",
+    "revised_prompt",
+    "revision_reason"
+  ],
+  "lesson_market": [
+    "timestamp",
+    "group_id",
+    "lesson_title",
+    "ai_entry_point",
+    "original_prompt",
+    "revised_prompt",
+    "avoid_thinking_replacement"
+  ],
+  "feedback": [
+    "timestamp",
+    "from_group_id",
+    "to_group_id",
+    "feedback_type",
+    "feedback_text"
+  ],
+  "ai_rules_traffic_light": [
+    "timestamp",
+    "group_id",
+    "green_items",
+    "yellow_items",
+    "red_items",
+    "class_rule"
+  ],
+  "exit_ticket": [
+    "timestamp",
+    "participant_id",
+    "name",
+    "group_id",
+    "takeaway",
+    "stuck_point",
+    "first_action",
+    "support_needed"
+  ],
+  "settings": [
+    "key",
+    "value",
+    "note"
+  ]
+}

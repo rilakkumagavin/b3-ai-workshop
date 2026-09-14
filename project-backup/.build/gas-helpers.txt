@@ -1,0 +1,72 @@
+function b3Respond_(work) {
+  let result;
+  try { result = { ok: true, data: work() }; }
+  catch (error) {
+    // Do not expose stack traces, request bodies, spreadsheet IDs or credentials.
+    result = { ok: false, error: { code: error.b3Code || 'INTERNAL_ERROR', message: error.b3Code ? error.message : '處理失敗，請檢查部署權限、試算表設定或稍後重試。' } };
+  }
+  return ContentService.createTextOutput(JSON.stringify(result)).setMimeType(ContentService.MimeType.JSON);
+}
+function b3Fail_(code, message) { const error = new Error(message); error.b3Code = code; throw error; }
+function b3Own_(object, key) { return typeof key === 'string' && Object.prototype.hasOwnProperty.call(object, key); }
+function b3Object_(value) { return value !== null && typeof value === 'object' && !Array.isArray(value); }
+function b3Id_(value, field) {
+  if (typeof value !== 'string' || !/^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$/.test(value)) b3Fail_('INVALID_FIELD', field + ' 請用 1–80 個英數字、底線或連字號，首字為英數字。');
+  return value;
+}
+function b3Date_(value) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = new Date(value + 'T00:00:00Z');
+  return !isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+}
+function b3Cell_(value) { return /^[=+@\-']/.test(value) ? "'" + value : value; }
+function b3ReadCell_(value) { return String(value).replace(/^'(?=[=+@\-'])/, ''); }
+
+/* Shared aggregate contract; also copied into Code.gs for Apps Script. */
+function b3InteractiveAggregate(rows) {
+  const words = new Map(), latest = new Map();
+  const keys = ['ethicsScore','basicsScore','teachingScore','developmentScore'];
+  rows.forEach(r => {
+    if (r.action === 'submitWordCloud') {
+      const keyword = (r.data.keyword || r.data.word || '').trim();
+      const mood = r.data.mood || '未分類';
+      if (keyword) {
+        const id = JSON.stringify([keyword,mood]);
+        const item = words.get(id) || {keyword,mood,count:0};
+        item.count++; words.set(id,item);
+      }
+    }
+    if (r.action === 'submitSelfCheck' && keys.every(k => /^[1-5]$/.test(r.data[k]))) {
+      const previous = latest.get(r.participantId);
+      if (!previous || String(r.timestamp) >= String(previous.timestamp)) latest.set(r.participantId,r);
+    }
+  });
+  return {word_cloud:[...words.values()], radar:{count:latest.size,
+    scores:keys.map(k => latest.size ? [...latest.values()].reduce((s,r) => s+Number(r.data[k]),0)/latest.size : null)}};
+}
+
+/* Only projection fields leave the aggregation layer. No participant IDs or profiles. */
+function b3ProjectionData(rows) {
+  const profiles = new Map();
+  rows.filter(r=>r.action==='submitParticipant').forEach(r=>profiles.set(r.participantId,r.data));
+  const names=[...profiles.values()].map(p=>p.displayName).filter(Boolean);
+  function clean(value) {
+    let text=String(value||'');
+    names.forEach(name=>{text=text.split(name).join('［姓名已隱藏］');});
+    return text.replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi,'［Email 已隱藏］')
+      .replace(/\b[A-Z][12]\d{8}\b/gi,'［證號已隱藏］')
+      .replace(/(?:\+886[-\s]?|0)(?:\d[-\s]?){8,9}\b/g,'［電話已隱藏］');
+  }
+  const group=r=>clean(profiles.get(r.participantId)?.groupName)||'未分組';
+  const pick=(action,fields)=>rows.filter(r=>r.action===action).map(r=>({group:group(r),...Object.fromEntries(fields.map(k=>[k,clean(r.data[k])]))}));
+  const goals=new Map();
+  rows.filter(r=>r.action==='submitLearningGoal').forEach(r=>{const goal=clean(r.data.goal).trim();if(goal)goals.set(goal,(goals.get(goal)||0)+1);});
+  return {projection:{
+    wordCloud:rows.filter(r=>r.action==='submitWordCloud').map(r=>({keyword:clean(r.data.keyword||r.data.word),mood:clean(r.data.mood||'未分類'),count:1})),
+    goals:[...goals].map(([goal,count])=>({goal,count})).sort((a,b)=>b.count-a.count),
+    risks:[...pick('submitRiskCase',['scenario','judgment','strategy']),...pick('submitRiskLessonTask',['scenario','riskType','studentTask','learningEvidence'])],
+    prompts:pick('submitPromptRevision',['lessonTitle','originalPrompt','revisedPrompt']),
+    rules:pick('submitTrafficLightRule',['greenRule','yellowRule','redRule']),
+    actions:pick('submitExitTicket',['firstStep'])
+  }};
+}

@@ -1,0 +1,537 @@
+{"kind":"deck","id":"pr/k5saao","name":"Deck"}
+{"kind":"layout","layoutId":"3c612341-4a89-4fa2-be88-d5ab4a3a1b89","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"932156db-ce2f-4374-a352-ef2fee0a6191","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/rp7c7l","slide":1,"title":"開場與 Check in","textShapes":6}
+{"kind":"textbox","id":"sh/8vm90nep","slide":1,"text":"開場與 Check in","textPreview":"開場與 Check in","textChars":12,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/9wvqtsfa","slide":1,"text":"1 分鐘","textPreview":"1 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/uh4r2xwv","slide":1,"text":"01 / 27","textPreview":"01 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"shape","id":"sh/vid8v2xg","slide":1,"bbox":[44,85,1192,487]}
+{"kind":"textbox","id":"sh/wjm947el","slide":1,"text":"邁向「以人為中心」的\nAI 賦能教學","textPreview":"邁向「以人為中心」的 | AI 賦能教學","textChars":18,"textLines":2,"bbox":[92,124,1085,155]}
+{"kind":"textbox","id":"sh/hkvqxcf6","slide":1,"text":"B3 教育部中小學數位教學指引培力工作坊（三小時）","textPreview":"B3 教育部中小學數位教學指引培力工作坊（三小時）","textChars":25,"textLines":1,"bbox":[94,304,1050,70]}
+{"kind":"textbox","id":"sh/al07qdwb","slide":1,"text":"人與人的真實連結，\n是一切科技應用的基礎。","textPreview":"人與人的真實連結， | 是一切科技應用的基礎。","textChars":21,"textLines":2,"bbox":[94,407,1050,126]}
+{"kind":"image","id":"im/q14f214z","slide":1,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/rp7c7l","slide":1,"text":"邁向「以人為中心」的 AI 賦能教學\n時間：09:00–09:01（1 分鐘）\n\n教育的起點是人。AI 可以協助，但真正看見、陪伴與引導學生的人，還是老師。今天一起完成 10 張任務卡，帶走可以回校嘗試的做法。\n\n教材來源：模組一 PDF 第 1–3 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/kroo8y","slide":2,"title":"開場與 Check in","textShapes":26}
+{"kind":"textbox","id":"sh/94be5o32","slide":2,"text":"開場與 Check in","textPreview":"開場與 Check in","textChars":12,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/832dcj2h","slide":2,"text":"1 分鐘","textPreview":"1 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/zy9czel0","slide":2,"text":"02 / 27","textPreview":"02 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/yd0v69kf","slide":2,"text":"今天不是聽講，是一起完成 10 張任務卡","textPreview":"今天不是聽講，是一起完成 10 張任務卡","textChars":20,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/l0ru1o3q","slide":2,"text":"從人際連結、風險判斷，到 AIPACK 教案實作","textPreview":"從人際連結、風險判斷，到 AIPACK 教案實作","textChars":24,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/0zid8j25","slide":2,"bbox":[150,327,970,3]}
+{"kind":"shape","id":"sh/ba9cvulo","slide":2,"bbox":[150,475,970,3]}
+{"kind":"shape","id":"sh/q9gv2pk3","slide":2,"bbox":[1115,327,3,151]}
+{"kind":"shape","id":"sh/0n2pobyp","slide":2,"bbox":[64,268,208,117]}
+{"kind":"textbox","id":"sh/lob6xgza","slide":2,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[78,276,44,43]}
+{"kind":"textbox","id":"sh/yl0nm1gz","slide":2,"text":"遇見夥伴","textPreview":"遇見夥伴","textChars":4,"textLines":1,"bbox":[80,327,180,42]}
+{"kind":"shape","id":"sh/zm9ov6h4","slide":2,"bbox":[300,268,208,117]}
+{"kind":"textbox","id":"sh/cji5kbyt","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[314,276,44,43]}
+{"kind":"textbox","id":"sh/dkr6twze","slide":2,"text":"打開地圖","textPreview":"打開地圖","textChars":4,"textLines":1,"bbox":[316,327,180,42]}
+{"kind":"shape","id":"sh/qx0ni1gn","slide":2,"bbox":[536,268,208,117]}
+{"kind":"textbox","id":"sh/by9or6h8","slide":2,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[550,276,44,43]}
+{"kind":"textbox","id":"sh/wfmpwvyx","slide":2,"text":"找到骨架","textPreview":"找到骨架","textChars":4,"textLines":1,"bbox":[552,327,180,42]}
+{"kind":"shape","id":"sh/xgv650fi","slide":2,"bbox":[772,268,208,117]}
+{"kind":"textbox","id":"sh/5cr6907m","slide":2,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[786,276,44,43]}
+{"kind":"textbox","id":"sh/4bi5gvq1","slide":2,"text":"自我定位","textPreview":"自我定位","textChars":4,"textLines":1,"bbox":[788,327,180,42]}
+{"kind":"shape","id":"sh/ja9o7qpg","slide":2,"bbox":[1008,268,208,117]}
+{"kind":"textbox","id":"sh/i90nel8b","slide":2,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1022,276,44,43]}
+{"kind":"textbox","id":"sh/h8765grq","slide":2,"text":"防護口訣","textPreview":"防護口訣","textChars":4,"textLines":1,"bbox":[1024,327,180,42]}
+{"kind":"shape","id":"sh/w7y5cbq5","slide":2,"bbox":[1008,416,208,117]}
+{"kind":"textbox","id":"sh/v6po3q9k","slide":2,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1022,424,44,43]}
+{"kind":"textbox","id":"sh/u5gnal8z","slide":2,"text":"風險小任務","textPreview":"風險小任務","textChars":5,"textLines":1,"bbox":[1024,475,180,42]}
+{"kind":"shape","id":"sh/94761gre","slide":2,"bbox":[772,416,208,117]}
+{"kind":"textbox","id":"sh/83y58bqt","slide":2,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[786,424,44,43]}
+{"kind":"textbox","id":"sh/y9c3ihor","slide":2,"text":"使用界線","textPreview":"使用界線","textChars":4,"textLines":1,"bbox":[788,475,180,42]}
+{"kind":"shape","id":"sh/za54bmpc","slide":2,"bbox":[536,416,208,117]}
+{"kind":"textbox","id":"sh/kbelkr6x","slide":2,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[550,424,44,43]}
+{"kind":"textbox","id":"sh/lcnmdcni","slide":2,"text":"測試提問","textPreview":"測試提問","textChars":4,"textLines":1,"bbox":[552,475,180,42]}
+{"kind":"shape","id":"sh/alc3exov","slide":2,"bbox":[300,416,208,117]}
+{"kind":"textbox","id":"sh/bmlk72pg","slide":2,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[314,424,44,43]}
+{"kind":"textbox","id":"sh/cnulg76l","slide":2,"text":"分享點子","textPreview":"分享點子","textChars":4,"textLines":1,"bbox":[316,475,180,42]}
+{"kind":"shape","id":"sh/xo3m9c76","slide":2,"bbox":[64,416,208,117]}
+{"kind":"textbox","id":"sh/2hs3axoj","slide":2,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[78,424,44,43]}
+{"kind":"textbox","id":"sh/3i1k32p4","slide":2,"text":"回校第一步","textPreview":"回校第一步","textChars":5,"textLines":1,"bbox":[80,475,180,42]}
+{"kind":"textbox","id":"sh/fal0fy90","slide":2,"text":"沿著航線完成任務，最後帶走一個課堂做法。","textPreview":"沿著航線完成任務，最後帶走一個課堂做法。","textChars":20,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/7uponq1o","slide":2,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/kroo8y","slide":2,"text":"今天不是聽講，是一起完成 10 張任務卡\n時間：09:01–09:02（1 分鐘）\n\n依實際上課順序介紹任務，任務卡 9 在風險模組完成，接著才是 7、8。請學員保留同一份任務紀錄，回校可繼續使用。\n\n教材來源：新版大綱第 2 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/awdm3c","slide":3,"title":"任務卡 1　/　開場與 Check in","textShapes":12}
+{"kind":"textbox","id":"sh/m50fuxcf","slide":3,"text":"任務卡 1　/　開場與 Check in","textPreview":"任務卡 1　/　開場與 Check in","textChars":20,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/7q9w32d0","slide":3,"text":"6 分鐘","textPreview":"6 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/wvix07ux","slide":3,"text":"03 / 27","textPreview":"03 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/hwbetcv2","slide":3,"text":"先停一下，遇見夥伴","textPreview":"先停一下，遇見夥伴","textChars":9,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/ut0fyhcr","slide":3,"text":"STOP 深呼吸 × 兩兩分享","textPreview":"STOP 深呼吸 × 兩兩分享","textChars":15,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/vu9wr2dc","slide":3,"bbox":[54,282,377.33,260]}
+{"kind":"textbox","id":"sh/czyxoned","slide":3,"text":"1 分鐘","textPreview":"1 分鐘","textChars":4,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/x07exsvy","slide":3,"text":"三次深呼吸\n微笑，和夥伴打招呼","textPreview":"三次深呼吸 | 微笑，和夥伴打招呼","textChars":15,"textLines":2,"bbox":[76,352,333.33,174]}
+{"kind":"shape","id":"sh/lw3690v2","slide":3,"bbox":[451.33,282,377.33,260]}
+{"kind":"textbox","id":"sh/kvu5gveh","slide":3,"text":"各 2 分鐘","textPreview":"各 2 分鐘","textChars":6,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/julo7adw","slide":3,"text":"分享一次 AI 帶來的\n驚艷或擔心","textPreview":"分享一次 AI 帶來的 | 驚艷或擔心","textChars":17,"textLines":2,"bbox":[473.33,352,333.33,174]}
+{"kind":"shape","id":"sh/ytcne5wb","slide":3,"bbox":[848.67,282,377.33,260]}
+{"kind":"textbox","id":"sh/tk36dkvy","slide":3,"text":"1 分鐘","textPreview":"1 分鐘","textChars":4,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/8ju5kfed","slide":3,"text":"回應夥伴：\n我聽見你在意……","textPreview":"回應夥伴： | 我聽見你在意……","textChars":14,"textLines":2,"bbox":[870.67,352,333.33,174]}
+{"kind":"textbox","id":"sh/7ylobads","slide":3,"text":"完成時：記住夥伴在意的一件事。","textPreview":"完成時：記住夥伴在意的一件事。","textChars":15,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/4bq5wjex","slide":3,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/awdm3c","slide":3,"text":"任務卡 1｜先停一下，遇見夥伴\n時間：09:02–09:08（6 分鐘）\n\n先用 1 分鐘深呼吸與找夥伴，每人分享 2 分鐘，最後 1 分鐘相互回應。不追求標準答案，提醒大家先聽完再回應。\n\n教材來源：課程表第 1 頁；模組一 PDF 第 2 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/19zb2b","slide":4,"title":"任務卡 2　/　開場與 Check in","textShapes":14}
+{"kind":"textbox","id":"sh/r6d4fqp4","slide":4,"text":"任務卡 2　/　開場與 Check in","textPreview":"任務卡 2　/　開場與 Check in","textChars":20,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/q543mloj","slide":4,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/1wfml076","slide":4,"text":"04 / 27","textPreview":"04 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/0b65sv6l","slide":4,"text":"打開地圖，看懂今天要去哪裡","textPreview":"打開地圖，看懂今天要去哪裡","textChars":13,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/zad4jqp0","slide":4,"text":"三小時 AI 教學航程","textPreview":"三小時 AI 教學航程","textChars":11,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/e94nqlof","slide":4,"bbox":[54,282,278,260]}
+{"kind":"textbox","id":"sh/90fmp072","slide":4,"text":"20 分鐘","textPreview":"20 分鐘","textChars":5,"textLines":1,"bbox":[76,300,234,42]}
+{"kind":"textbox","id":"sh/oz65wv6h","slide":4,"text":"看懂指引","textPreview":"看懂指引","textChars":4,"textLines":1,"bbox":[76,352,234,174]}
+{"kind":"shape","id":"sh/mlsvuhcf","slide":4,"bbox":[352,282,278,260]}
+{"kind":"textbox","id":"sh/n61cnmdk","slide":4,"text":"60 分鐘","textPreview":"60 分鐘","textChars":5,"textLines":1,"bbox":[374,300,234,42]}
+{"kind":"textbox","id":"sh/87adw7u5","slide":4,"text":"看見 AI 風險","textPreview":"看見 AI 風險","textChars":8,"textLines":1,"bbox":[374,352,234,174]}
+{"kind":"shape","id":"sh/98jupcvq","slide":4,"bbox":[650,282,278,260]}
+{"kind":"textbox","id":"sh/a9cvyhcb","slide":4,"text":"80 分鐘","textPreview":"80 分鐘","textChars":5,"textLines":1,"bbox":[672,300,234,42]}
+{"kind":"textbox","id":"sh/valcrmdw","slide":4,"text":"設計 AI 教學任務","textPreview":"設計 AI 教學任務","textChars":10,"textLines":1,"bbox":[672,352,234,174]}
+{"kind":"shape","id":"sh/wbud0ruh","slide":4,"bbox":[948,282,278,260]}
+{"kind":"textbox","id":"sh/xc3etwv2","slide":4,"text":"10 分鐘","textPreview":"10 分鐘","textChars":5,"textLines":1,"bbox":[970,300,234,42]}
+{"kind":"textbox","id":"sh/qd8vmxc7","slide":4,"text":"帶走回校第一步","textPreview":"帶走回校第一步","textChars":7,"textLines":1,"bbox":[970,352,234,174]}
+{"kind":"textbox","id":"sh/behcf2ds","slide":4,"text":"加上開場 10 分鐘，共 180 分鐘。","textPreview":"加上開場 10 分鐘，共 180 分鐘。","textChars":20,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/1cbitwni","slide":4,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/19zb2b","slide":4,"text":"任務卡 2｜打開地圖，看懂今天要去哪裡\n時間：09:08–09:10（2 分鐘）\n\n請學員對照四個停靠站，指出最期待的一站。模組三需要載具，成果可貼到講師提供的 Padlet。課程表沒有另列休息，短暫伸展由講師在活動內彈性安排，不額外增加時長。\n\n教材來源：課程表第 1–2 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/fmoss4","slide":5,"title":"模組一　看懂指引","textShapes":12}
+{"kind":"textbox","id":"sh/hw72lor6","slide":5,"text":"模組一　看懂指引","textPreview":"模組一　看懂指引","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/gvy1cja1","slide":5,"text":"3 分鐘","textPreview":"3 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/3y9kny9c","slide":5,"text":"05 / 27","textPreview":"05 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/ixgjetsr","slide":5,"text":"指引像一艘船","textPreview":"指引像一艘船","textChars":6,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/p0r2pori","slide":5,"text":"風帆、龍骨、船身，帶我們航行數位浪潮","textPreview":"風帆、龍骨、船身，帶我們航行數位浪潮","textChars":18,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/4zi1gjax","slide":5,"bbox":[315,285,7,181]}
+{"kind":"shape","id":"sh/j25kbu98","slide":5,"bbox":[168,292,140,152]}
+{"kind":"shape","id":"sh/y1wj2psn","slide":5,"bbox":[330,313,172,131]}
+{"kind":"shape","id":"sh/8bylwnqx","slide":5,"bbox":[145,458,405,69]}
+{"kind":"shape","id":"sh/9c72psri","slide":5,"bbox":[322,526,12,40]}
+{"kind":"shape","id":"sh/m9g3ux8r","slide":5,"bbox":[570,306,50,3]}
+{"kind":"shape","id":"sh/7apkn29c","slide":5,"bbox":[641,264,580,95]}
+{"kind":"textbox","id":"sh/wfil07q9","slide":5,"text":"風帆　趨勢與願景","textPreview":"風帆　趨勢與願景","textChars":8,"textLines":1,"bbox":[663,272,536,39]}
+{"kind":"textbox","id":"sh/hgrmtcre","slide":5,"text":"決定航行方向","textPreview":"決定航行方向","textChars":6,"textLines":1,"bbox":[663,314,536,36]}
+{"kind":"shape","id":"sh/ud03yx83","slide":5,"bbox":[570,409,50,3]}
+{"kind":"shape","id":"sh/ve9kr29o","slide":5,"bbox":[641,367,580,95]}
+{"kind":"textbox","id":"sh/cjelo3ap","slide":5,"text":"船身　教學策略與案例","textPreview":"船身　教學策略與案例","textChars":10,"textLines":1,"bbox":[663,375,536,39]}
+{"kind":"textbox","id":"sh/xkn2h8ra","slide":5,"text":"承載課堂實作","textPreview":"承載課堂實作","textChars":6,"textLines":1,"bbox":[663,417,536,36]}
+{"kind":"shape","id":"sh/dgfil4jy","slide":5,"bbox":[570,512,50,3]}
+{"kind":"shape","id":"sh/cf61sz2t","slide":5,"bbox":[641,470,580,95]}
+{"kind":"textbox","id":"sh/rex0ju18","slide":5,"text":"龍骨　以人為中心","textPreview":"龍骨　以人為中心","textChars":8,"textLines":1,"bbox":[663,478,536,39]}
+{"kind":"textbox","id":"sh/qdojqpkn","slide":5,"text":"守住核心價值","textPreview":"守住核心價值","textChars":6,"textLines":1,"bbox":[663,520,536,36]}
+{"kind":"textbox","id":"sh/14zipoja","slide":5,"text":"工具可以更新，教學的方向由人掌握。","textPreview":"工具可以更新，教學的方向由人掌握。","textChars":17,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/j2lofi10","slide":5,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/fmoss4","slide":5,"text":"指引像一艘船\n時間：09:10–09:13（3 分鐘）\n\n以模組一的船架構導讀：第一章是風帆，第二至第七章構成船身，龍骨是以人為中心的數位 AI 素養教育。接著邀請學員親自翻找。\n\n教材來源：模組一 PDF 第 12–14 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/ymms82","slide":6,"title":"任務卡 3　/　模組一　看懂指引","textShapes":12}
+{"kind":"textbox","id":"sh/lkf6lwnu","slide":6,"text":"任務卡 3　/　模組一　看懂指引","textPreview":"任務卡 3　/　模組一　看懂指引","textChars":16,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/0j65sb6p","slide":6,"text":"6 分鐘","textPreview":"6 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/bedofm5s","slide":6,"text":"06 / 27","textPreview":"06 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/qd4nmho7","slide":6,"text":"快速翻書，找到指引骨架","textPreview":"快速翻書，找到指引骨架","textChars":11,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/dgf6hwny","slide":6,"text":"6 分鐘指引速查","textPreview":"6 分鐘指引速查","textChars":8,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/cf65or6d","slide":6,"bbox":[54,282,377.33,260]}
+{"kind":"textbox","id":"sh/3ad4bm5w","slide":6,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/294nihob","slide":6,"text":"翻各章的「重點先看」\n與「問題啟思」","textPreview":"翻各章的「重點先看」 | 與「問題啟思」","textChars":18,"textLines":2,"bbox":[76,352,333.33,174]}
+{"kind":"shape","id":"sh/gjy1k7mt","slide":6,"bbox":[451.33,282,377.33,260]}
+{"kind":"textbox","id":"sh/1k72dc3e","slide":6,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/ehgjix43","slide":6,"text":"找風帆、龍骨、船身\n各標記一個位置","textPreview":"找風帆、龍骨、船身 | 各標記一個位置","textChars":17,"textLines":2,"bbox":[473.33,352,333.33,174]}
+{"kind":"shape","id":"sh/fipkb2lo","slide":6,"bbox":[848.67,282,377.33,260]}
+{"kind":"textbox","id":"sh/sfe1gnmx","slide":6,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/tgn29s3i","slide":6,"text":"圈選最需要的一章\n寫下想解決的問題","textPreview":"圈選最需要的一章 | 寫下想解決的問題","textChars":17,"textLines":2,"bbox":[870.67,352,333.33,174]}
+{"kind":"textbox","id":"sh/6dwjex4r","slide":6,"text":"帶走：一個章節位置＋一個課堂問題。","textPreview":"帶走：一個章節位置＋一個課堂問題。","textChars":17,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/zepc325w","slide":6,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/ymms82","slide":6,"text":"任務卡 3｜快速翻書，找到指引骨架\n時間：09:13–09:19（6 分鐘）\n\n開始前備妥指引全文或可翻閱版本。學員若只有模組 PDF，可先閱讀模組一第 13 頁架構，從第二至第七章圈選需求，課後再查全文。個人速查完整 6 分鐘，講師巡看並提示章首章末。\n\n教材來源：模組一 PDF 第 13–14 頁；新版大綱第 6 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/ze3w70","slide":7,"title":"模組一　看懂指引","textShapes":14}
+{"kind":"textbox","id":"sh/dsz6hkb6","slide":7,"text":"模組一　看懂指引","textPreview":"模組一　看懂指引","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/crqpofa1","slide":7,"text":"3 分鐘","textPreview":"3 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/3mxobqt4","slide":7,"text":"07 / 27","textPreview":"07 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/2lo7i5cj","slide":7,"text":"數位與 AI 教育四大趨勢","textPreview":"數位與 AI 教育四大趨勢","textChars":13,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/poz6d0ba","slide":7,"text":"從載具普及，走向智慧學習環境","textPreview":"從載具普及，走向智慧學習環境","textChars":14,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/4nqpkvup","slide":7,"bbox":[54,282,278,260]}
+{"kind":"textbox","id":"sh/fyxo7qt8","slide":7,"text":"載具發展","textPreview":"載具發展","textChars":4,"textLines":1,"bbox":[76,300,234,42]}
+{"kind":"textbox","id":"sh/uxo7elcn","slide":7,"text":"從有設備\n到能支持學習","textPreview":"從有設備 | 到能支持學習","textChars":11,"textLines":2,"bbox":[76,352,234,174]}
+{"kind":"shape","id":"sh/8bql4rep","slide":7,"bbox":[352,282,278,260]}
+{"kind":"textbox","id":"sh/9cjmxwfa","slide":7,"text":"平臺轉型","textPreview":"平臺轉型","textChars":4,"textLines":1,"bbox":[374,300,234,42]}
+{"kind":"textbox","id":"sh/m9832hwj","slide":7,"text":"從放資源\n到協助適性學習","textPreview":"從放資源 | 到協助適性學習","textChars":12,"textLines":2,"bbox":[374,352,234,174]}
+{"kind":"shape","id":"sh/7ahkvmx4","slide":7,"bbox":[650,282,278,260]}
+{"kind":"textbox","id":"sh/07ql0red","slide":7,"text":"指引升級","textPreview":"指引升級","textChars":4,"textLines":1,"bbox":[672,300,234,42]}
+{"kind":"textbox","id":"sh/l8z2tcfy","slide":7,"text":"從工具操作\n到人本 AI 素養","textPreview":"從工具操作 | 到人本 AI 素養","textChars":15,"textLines":2,"bbox":[672,352,234,174]}
+{"kind":"shape","id":"sh/y583yhwn","slide":7,"bbox":[948,282,278,260]}
+{"kind":"textbox","id":"sh/z6hkrmx8","slide":7,"text":"學科融合","textPreview":"學科融合","textChars":4,"textLines":1,"bbox":[970,300,234,42]}
+{"kind":"textbox","id":"sh/43alcbex","slide":7,"text":"從試用 AI\n到解決學科難點","textPreview":"從試用 AI | 到解決學科難點","textChars":14,"textLines":2,"bbox":[970,352,234,174]}
+{"kind":"textbox","id":"sh/543m5gvi","slide":7,"text":"想一想：你的課堂正走到哪一步？","textPreview":"想一想：你的課堂正走到哪一步？","textChars":15,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/vmhkn65g","slide":7,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/ze3w70","slide":7,"text":"數位與 AI 教育四大趨勢\n時間：09:19–09:22（3 分鐘）\n\n四項名稱依新版大綱，卡片短句是現場導讀用的轉譯。邀請學員舉手指出自己最有感的一項，不逐條宣讀政策。連結下一頁：設備與平臺改變時，老師也需要看見自己的 AI 素養。\n\n教材來源：新版大綱第 7 頁；模組一 PDF 第 5–10 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/xgask5","slide":8,"title":"模組一　看懂指引","textShapes":18}
+{"kind":"textbox","id":"sh/yl43epwb","slide":8,"text":"模組一　看懂指引","textPreview":"模組一　看懂指引","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/jmd47udw","slide":8,"text":"3 分鐘","textPreview":"3 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/8b6lkzed","slide":8,"text":"08 / 27","textPreview":"08 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/tcfmd4vy","slide":8,"text":"AI 素養框架：四面向 × 三層次","textPreview":"AI 素養框架：四面向 × 三層次","textChars":17,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/69o3i9wn","slide":8,"text":"看見自己目前站在哪裡","textPreview":"看見自己目前站在哪裡","textChars":10,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/7ax4bud8","slide":8,"bbox":[54,272,375,126]}
+{"kind":"textbox","id":"sh/of2l8fe9","slide":8,"text":"AI 倫理","textPreview":"AI 倫理","textChars":5,"textLines":1,"bbox":[76,290,331,42]}
+{"kind":"textbox","id":"sh/9gv21kvu","slide":8,"text":"保護資料，辨識風險","textPreview":"保護資料，辨識風險","textChars":9,"textLines":1,"bbox":[76,342,331,40]}
+{"kind":"shape","id":"sh/dg3ilcjy","slide":8,"bbox":[449,272,375,126]}
+{"kind":"textbox","id":"sh/cfu1s72d","slide":8,"text":"AI 基礎與技術","textPreview":"AI 基礎與技術","textChars":8,"textLines":1,"bbox":[471,290,331,42]}
+{"kind":"textbox","id":"sh/bel0j218","slide":8,"text":"理解原理，選用工具","textPreview":"理解原理，選用工具","textChars":9,"textLines":1,"bbox":[471,342,331,40]}
+{"kind":"shape","id":"sh/qdszqxkn","slide":8,"bbox":[54,415,375,126]}
+{"kind":"textbox","id":"sh/lk3ipwja","slide":8,"text":"AI 賦能教學","textPreview":"AI 賦能教學","textChars":7,"textLines":1,"bbox":[76,433,331,42]}
+{"kind":"textbox","id":"sh/0ju1wr2p","slide":8,"text":"設計任務，觀察學習","textPreview":"設計任務，觀察學習","textChars":9,"textLines":1,"bbox":[76,485,331,40]}
+{"kind":"shape","id":"sh/zil0nm14","slide":8,"bbox":[449,415,375,126]}
+{"kind":"textbox","id":"sh/yhcjuhkj","slide":8,"text":"AI 促進專業發展","textPreview":"AI 促進專業發展","textChars":9,"textLines":1,"bbox":[471,433,331,42]}
+{"kind":"textbox","id":"sh/98nitwj6","slide":8,"text":"共備、反思與持續學習","textPreview":"共備、反思與持續學習","textChars":10,"textLines":1,"bbox":[471,485,331,40]}
+{"kind":"shape","id":"sh/87e10r2l","slide":8,"bbox":[866,451,320,69]}
+{"kind":"textbox","id":"sh/sn6tcze9","slide":8,"text":"取得理解","textPreview":"取得理解","textChars":4,"textLines":1,"bbox":[885,461,274,48]}
+{"kind":"shape","id":"sh/tofu54vu","slide":8,"bbox":[886,375,300,69]}
+{"kind":"textbox","id":"sh/614bapw3","slide":8,"text":"深化應用","textPreview":"深化應用","textChars":4,"textLines":1,"bbox":[905,385,254,48]}
+{"kind":"shape","id":"sh/72dc3udo","slide":8,"bbox":[906,299,280,69]}
+{"kind":"textbox","id":"sh/gr6tgze5","slide":8,"text":"創造轉型","textPreview":"創造轉型","textChars":4,"textLines":1,"bbox":[925,309,234,48]}
+{"kind":"textbox","id":"sh/1sfu94vq","slide":8,"text":"三層次，逐步前進","textPreview":"三層次，逐步前進","textChars":8,"textLines":1,"bbox":[853,256,368,39]}
+{"kind":"textbox","id":"sh/epobe9wz","slide":8,"text":"圈一個面向，再找自己的下一步。","textPreview":"圈一個面向，再找自己的下一步。","textChars":15,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/gjah03u5","slide":8,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/xgask5","slide":8,"text":"AI 素養框架：四面向 × 三層次\n時間：09:22–09:25（3 分鐘）\n\n四面向各自都有三層次，不是把老師貼上單一等級。例：會說明個資風險是取得理解；能在課堂落實規範是深化應用；能設計新的教學方案是創造轉型。用這張框架準備下一頁定位。\n\n教材來源：模組一 PDF 第 19 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/ga0qpj","slide":9,"title":"任務卡 4　/　模組一　看懂指引","textShapes":12}
+{"kind":"textbox","id":"sh/ml8bux4r","slide":9,"text":"任務卡 4　/　模組一　看懂指引","textPreview":"任務卡 4　/　模組一　看懂指引","textChars":16,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/76hcn25c","slide":9,"text":"5 分鐘","textPreview":"5 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/gbat07mt","slide":9,"text":"09 / 27","textPreview":"09 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/hcjutcne","slide":9,"text":"照一照自己的 AI 教學位置","textPreview":"照一照自己的 AI 教學位置","textChars":14,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/u9sbyh43","slide":9,"text":"AI 素養自我定位","textPreview":"AI 素養自我定位","textChars":9,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/va1crm5o","slide":9,"bbox":[54,282,377.33,260]}
+{"kind":"textbox","id":"sh/cf6tonmp","slide":9,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/xgfahsna","slide":9,"text":"我已經會什麼？\n寫一個真實例子","textPreview":"我已經會什麼？ | 寫一個真實例子","textChars":15,"textLines":2,"bbox":[76,352,333.33,174]}
+{"kind":"shape","id":"sh/xkje5wjy","slide":9,"bbox":[451.33,282,377.33,260]}
+{"kind":"textbox","id":"sh/cjadwrid","slide":9,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/bi1w3m1s","slide":9,"text":"我還不熟什麼？\n圈一個面向與層次","textPreview":"我還不熟什麼？ | 圈一個面向與層次","textChars":16,"textLines":2,"bbox":[473.33,352,333.33,174]}
+{"kind":"shape","id":"sh/ahsvuh07","slide":9,"bbox":[848.67,282,377.33,260]}
+{"kind":"textbox","id":"sh/l83e9wju","slide":9,"text":"1 分鐘","textPreview":"1 分鐘","textChars":4,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/k7ax0rip","slide":9,"text":"我最想先補哪一塊？\n選一個今天的目標","textPreview":"我最想先補哪一塊？ | 選一個今天的目標","textChars":18,"textLines":2,"bbox":[870.67,352,333.33,174]}
+{"kind":"textbox","id":"sh/z61w7m14","slide":9,"text":"帶走：我的增能目標是＿＿＿＿。","textPreview":"帶走：我的增能目標是＿＿＿＿。","textChars":15,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/0ryp4bq9","slide":9,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/ga0qpj","slide":9,"text":"任務卡 4｜照一照自己的 AI 教學位置\n時間：09:25–09:30（5 分鐘）\n\n可用紙筆或教材提供的自我檢視表，無須額外開外部測驗。保留 5 分鐘個人思考，不公開比較等級。提醒學員在最後一張任務卡回看這個目標。\n\n教材來源：模組一 PDF 第 19、25 頁；新版大綱第 9 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/33w96b","slide":10,"title":"模組二　看見風險","textShapes":18}
+{"kind":"textbox","id":"sh/r290va9o","slide":10,"text":"模組二　看見風險","textPreview":"模組二　看見風險","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/q10j2583","slide":10,"text":"5 分鐘","textPreview":"5 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/18b21krq","slide":10,"text":"10 / 27","textPreview":"10 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/07218fq5","slide":10,"text":"Human in the Loop：人仍在環路中","textPreview":"Human in the Loop：人仍在環路中","textChars":24,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/z690za9k","slide":10,"text":"AI 可以協助，但人要判斷、選擇與負責","textPreview":"AI 可以協助，但人要判斷、選擇與負責","textChars":19,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/e50j658z","slide":10,"bbox":[54,294,274,226]}
+{"kind":"textbox","id":"sh/hc7ip0rm","slide":10,"text":"理解","textPreview":"理解","textChars":2,"textLines":1,"bbox":[76,312,230,42]}
+{"kind":"textbox","id":"sh/gby1wvq1","slide":10,"text":"學生要學會\n什麼？","textPreview":"學生要學會 | 什麼？","textChars":9,"textLines":2,"bbox":[76,364,230,140]}
+{"kind":"textbox","id":"sh/atcb214j","slide":10,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[328,365,25,47]}
+{"kind":"shape","id":"sh/bu5sv654","slide":10,"bbox":[353,294,274,226]}
+{"kind":"textbox","id":"sh/cvet4bmp","slide":10,"text":"判斷","textPreview":"判斷","textChars":2,"textLines":1,"bbox":[375,312,230,42]}
+{"kind":"textbox","id":"sh/xwnuxgna","slide":10,"text":"AI 的建議適合嗎？","textPreview":"AI 的建議適合嗎？","textChars":10,"textLines":1,"bbox":[375,364,230,140]}
+{"kind":"textbox","id":"sh/yxwb6l4f","slide":10,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[627,365,25,47]}
+{"kind":"shape","id":"sh/zy5czql0","slide":10,"bbox":[652,294,274,226]}
+{"kind":"textbox","id":"sh/kzet8bml","slide":10,"text":"查證","textPreview":"查證","textChars":2,"textLines":1,"bbox":[674,312,230,42]}
+{"kind":"textbox","id":"sh/l0nu1g36","slide":10,"text":"證據在哪裡？","textPreview":"證據在哪裡？","textChars":6,"textLines":1,"bbox":[674,364,230,140]}
+{"kind":"textbox","id":"sh/m1wbal4r","slide":10,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[926,365,25,47]}
+{"kind":"shape","id":"sh/72pc3qlc","slide":10,"bbox":[951,294,274,226]}
+{"kind":"textbox","id":"sh/3qpsrq1k","slide":10,"text":"負責","textPreview":"負責","textChars":2,"textLines":1,"bbox":[973,312,230,42]}
+{"kind":"textbox","id":"sh/ipgbilkz","slide":10,"text":"採用前，由人確認","textPreview":"採用前，由人確認","textChars":8,"textLines":1,"bbox":[973,364,230,140]}
+{"kind":"shape","id":"sh/5s7at0ja","slide":10,"bbox":[158,550,970,3]}
+{"kind":"shape","id":"sh/4rytkv2p","slide":10,"bbox":[158,520,3,33]}
+{"kind":"shape","id":"sh/v2psnq18","slide":10,"bbox":[1125,520,3,33]}
+{"kind":"shape","id":"sh/u1wrelkn","slide":10,"bbox":[502,536,276,36]}
+{"kind":"textbox","id":"sh/h47ap0je","slide":10,"text":"回看與調整","textPreview":"回看與調整","textChars":5,"textLines":1,"bbox":[504,534,272,39]}
+{"kind":"textbox","id":"sh/w3y9gv2t","slide":10,"text":"每次採用 AI 產出前，都要回到人的判斷。","textPreview":"每次採用 AI 產出前，都要回到人的判斷。","textChars":21,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/9ovelcne","slide":10,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/33w96b","slide":10,"text":"Human in the Loop：人仍在環路中\n時間：09:30–09:35（5 分鐘）\n\n請以 AI 產生一份學習單為例：老師設定目標、檢查難度、查證題目與答案，再決定使用。學生也要說明採用或修正理由。這是持續回看與調整的循環。\n\n教材來源：模組二 PDF 第 2–5 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/4lrqa9","slide":11,"title":"模組二　看見風險","textShapes":12}
+{"kind":"textbox","id":"sh/c76dof6x","slide":11,"text":"模組二　看見風險","textPreview":"模組二　看見風險","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/x8fehk7i","slide":11,"text":"4 分鐘","textPreview":"4 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/y9ovqpo3","slide":11,"text":"11 / 27","textPreview":"11 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/zaxwjupo","slide":11,"text":"AI 風險全景：不是禁止，而是看見","textPreview":"AI 風險全景：不是禁止，而是看見","textChars":17,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/kb6xsz6t","slide":11,"text":"先認出風險，才知道要教哪一種判斷","textPreview":"先認出風險，才知道要教哪一種判斷","textChars":16,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/lczel47e","slide":11,"bbox":[54,282,377.33,260]}
+{"kind":"textbox","id":"sh/mx8fupoz","slide":11,"text":"資訊可信嗎？","textPreview":"資訊可信嗎？","textChars":6,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/7yhwnu5k","slide":11,"text":"錯假訊息　／　AI 幻覺","textPreview":"錯假訊息　／　AI 幻覺","textChars":12,"textLines":1,"bbox":[76,352,333.33,174]}
+{"kind":"shape","id":"sh/rito3mxg","slide":11,"bbox":[451.33,282,377.33,260]}
+{"kind":"textbox","id":"sh/qhknahwb","slide":11,"text":"思考還在嗎？","textPreview":"思考還在嗎？","textChars":6,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/dkb65cfm","slide":11,"text":"認知卸載　／　資訊同溫層","textPreview":"認知卸載　／　資訊同溫層","textChars":12,"textLines":1,"bbox":[473.33,352,333.33,174]}
+{"kind":"shape","id":"sh/cj25c7e1","slide":11,"bbox":[848.67,282,377.33,260]}
+{"kind":"textbox","id":"sh/3e9oz2xk","slide":11,"text":"人有被照顧嗎？","textPreview":"人有被照顧嗎？","textChars":7,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/2d0n6xwz","slide":11,"text":"資安隱私　／　情感依附","textPreview":"資安隱私　／　情感依附","textChars":11,"textLines":1,"bbox":[870.67,352,333.33,174]}
+{"kind":"textbox","id":"sh/pgb61cfq","slide":11,"text":"先挑一個你在課堂看過的情境。","textPreview":"先挑一個你在課堂看過的情境。","textChars":14,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/qtgru10v","slide":11,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/4lrqa9","slide":11,"text":"AI 風險全景：不是禁止，而是看見\n時間：09:35–09:39（4 分鐘）\n\n依新版大綱保留六項風險，分成三個提問，避免六張小卡擠滿版面。模組二原教材還談教育工具化，本頁不是全部風險的完整清單。請學員先連結經驗，後續用口訣練習處理。\n\n教材來源：模組二 PDF 第 6、13、15、17、19、23 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/33rema","slide":12,"title":"任務卡 5　/　模組二　看見風險","textShapes":12}
+{"kind":"textbox","id":"sh/ilw3y107","slide":12,"text":"任務卡 5　/　模組二　看見風險","textPreview":"任務卡 5　/　模組二　看見風險","textChars":16,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/jm5krm1s","slide":12,"text":"4 分鐘","textPreview":"4 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/wjelwri1","slide":12,"text":"12 / 27","textPreview":"12 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/xkn2pwjm","slide":12,"text":"練一組學生聽得懂的防護口訣","textPreview":"練一組學生聽得懂的防護口訣","textChars":13,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/ahw3uhkv","slide":12,"text":"停一下、查一下、問一下、再決定","textPreview":"停一下、查一下、問一下、再決定","textChars":15,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/vi5knm1g","slide":12,"bbox":[54,282,377.33,260]}
+{"kind":"textbox","id":"sh/gfil8bi5","slide":12,"text":"1 分鐘","textPreview":"1 分鐘","textChars":4,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/hgrm1gjq","slide":12,"text":"選一種情境\n轉傳消息／交作業／問 AI","textPreview":"選一種情境 | 轉傳消息／交作業／問 AI","textChars":19,"textLines":2,"bbox":[76,352,333.33,174]}
+{"kind":"shape","id":"sh/9cra54z2","slide":12,"bbox":[451.33,282,377.33,260]}
+{"kind":"textbox","id":"sh/8bi9wzih","slide":12,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/7a9s3uhw","slide":12,"text":"兩人用一句話提醒學生\nSTEP／THINK／FACT 擇一","textPreview":"兩人用一句話提醒學生 | STEP／THINK／FACT 擇一","textChars":29,"textLines":2,"bbox":[473.33,352,333.33,174]}
+{"kind":"shape","id":"sh/m90rup0b","slide":12,"bbox":[848.67,282,377.33,260]}
+{"kind":"textbox","id":"sh/l8ra1kzq","slide":12,"text":"1 分鐘","textPreview":"1 分鐘","textChars":4,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/07i9sfi5","slide":12,"text":"交換說一次\n對方聽得懂就留下","textPreview":"交換說一次 | 對方聽得懂就留下","textChars":14,"textLines":2,"bbox":[870.67,352,333.33,174]}
+{"kind":"textbox","id":"sh/z698zah0","slide":12,"text":"帶走：一句學生聽得懂、做得到的提醒。","textPreview":"帶走：一句學生聽得懂、做得到的提醒。","textChars":18,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/4b2tsz21","slide":12,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/33rema","slide":12,"text":"任務卡 5｜練一組學生聽得懂的防護口訣\n時間：09:39–09:43（4 分鐘）\n\n先用中文暖身句帶全班說一次。STEP 對應資訊來源查核，THINK 對應保留思考，FACT 對應查證 AI 回答。這裡先試說，接下來四頁提供具體做法，不要求立刻背完英文。\n\n教材來源：模組二 PDF 第 7、14、16 頁；新版大綱第 12 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/ln2u70","slide":13,"title":"模組二　看見風險","textShapes":14}
+{"kind":"textbox","id":"sh/1snilwfq","slide":13,"text":"模組二　看見風險","textPreview":"模組二　看見風險","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/gre1sry5","slide":13,"text":"6 分鐘","textPreview":"6 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/rm50fmho","slide":13,"text":"13 / 27","textPreview":"13 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/61wzmhg3","slide":13,"text":"STEP：看來源、看時間、看證據、看觀點","textPreview":"STEP：看來源、看時間、看證據、看觀點","textChars":20,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/tonihwzu","slide":13,"text":"練習情境：群組流傳一張「明天停課」截圖","textPreview":"練習情境：群組流傳一張「明天停課」截圖","textChars":19,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/snehory9","slide":13,"bbox":[54,282,278,260]}
+{"kind":"textbox","id":"sh/bip0r6xs","slide":13,"text":"S  Source","textPreview":"S  Source","textChars":9,"textLines":1,"bbox":[76,300,234,42]}
+{"kind":"textbox","id":"sh/qxgjy1g7","slide":13,"text":"看來源\n誰發布的？","textPreview":"看來源 | 誰發布的？","textChars":9,"textLines":2,"bbox":[76,352,234,174]}
+{"kind":"shape","id":"sh/obq14ruh","slide":13,"bbox":[352,282,278,260]}
+{"kind":"textbox","id":"sh/pczidwb2","slide":13,"text":"T  Time","textPreview":"T  Time","textChars":7,"textLines":1,"bbox":[374,300,234,42]}
+{"kind":"textbox","id":"sh/298j2hcb","slide":13,"text":"看時間\n是這次事件嗎？","textPreview":"看時間 | 是這次事件嗎？","textChars":11,"textLines":2,"bbox":[374,352,234,174]}
+{"kind":"shape","id":"sh/3ah0bmtw","slide":13,"bbox":[650,282,278,260]}
+{"kind":"textbox","id":"sh/gn6107ul","slide":13,"text":"E  Evidence","textPreview":"E  Evidence","textChars":11,"textLines":1,"bbox":[672,300,234,42]}
+{"kind":"textbox","id":"sh/1ofi9cvq","slide":13,"text":"看證據\n找得到原公告嗎？","textPreview":"看證據 | 找得到原公告嗎？","textChars":12,"textLines":2,"bbox":[672,352,234,174]}
+{"kind":"shape","id":"sh/elojyhcf","slide":13,"bbox":[948,282,278,260]}
+{"kind":"textbox","id":"sh/fmx072d0","slide":13,"text":"P  Perspective","textPreview":"P  Perspective","textChars":14,"textLines":1,"bbox":[970,300,234,42]}
+{"kind":"textbox","id":"sh/sj6hw7u9","slide":13,"text":"看觀點\n其他來源怎麼說？","textPreview":"看觀點 | 其他來源怎麼說？","textChars":12,"textLines":2,"bbox":[970,352,234,174]}
+{"kind":"textbox","id":"sh/tkfi5cvu","slide":13,"text":"查到原始公告前，先不要轉傳。","textPreview":"查到原始公告前，先不要轉傳。","textChars":14,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/3y14re9w","slide":13,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/ln2u70","slide":13,"text":"STEP：看來源、看時間、看證據、看觀點\n時間：09:43–09:49（6 分鐘）\n\n本頁停課截圖是教學情境，非真實事件。1 分鐘出題，3 分鐘兩人列出要查的線索，2 分鐘回收。可加入疑似 AI 聲音或影像：看起來像本人仍需由獨立可信管道確認，不靠肉眼或單一偵測結果定案。\n\n教材來源：模組二 PDF 第 7–8 頁；情境為本工作坊改編\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/wmk1y6","slide":14,"title":"模組二　看見風險","textShapes":16}
+{"kind":"textbox","id":"sh/o7ylkreh","slide":14,"text":"模組二　看見風險","textPreview":"模組二　看見風險","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/p87mdwv2","slide":14,"text":"5 分鐘","textPreview":"5 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/q9g3mhwn","slide":14,"text":"14 / 27","textPreview":"14 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/bap4fmds","slide":14,"text":"THINK：讓思考不外包","textPreview":"THINK：讓思考不外包","textChars":12,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/cbylored","slide":14,"text":"AI 給提示，學生留下自己的推理","textPreview":"AI 給提示，學生留下自己的推理","textChars":16,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/dcrmhwvy","slide":14,"bbox":[143,368,984,3]}
+{"kind":"shape","id":"sh/6dw3axw3","slide":14,"bbox":[54,290,220,240]}
+{"kind":"textbox","id":"sh/re5432do","slide":14,"text":"T","textPreview":"T","textChars":1,"textLines":1,"bbox":[84,309,160,92]}
+{"kind":"textbox","id":"sh/b2dcvqhg","slide":14,"text":"先試試","textPreview":"先試試","textChars":3,"textLines":1,"bbox":[64,433,200,60]}
+{"kind":"shape","id":"sh/q14bml0v","slide":14,"bbox":[292,290,220,240]}
+{"kind":"textbox","id":"sh/dofux0zm","slide":14,"text":"H","textPreview":"H","textChars":1,"textLines":1,"bbox":[322,309,160,92]}
+{"kind":"textbox","id":"sh/c3mtovi1","slide":14,"text":"提示我","textPreview":"提示我","textChars":3,"textLines":1,"bbox":[302,433,200,60]}
+{"kind":"shape","id":"sh/3ydcrqhk","slide":14,"bbox":[530,290,220,240]}
+{"kind":"textbox","id":"sh/2x4bil0z","slide":14,"text":"I","textPreview":"I","textChars":1,"textLines":1,"bbox":[560,309,160,92]}
+{"kind":"textbox","id":"sh/p0vutgzq","slide":14,"text":"自己詮釋","textPreview":"自己詮釋","textChars":4,"textLines":1,"bbox":[540,433,200,60]}
+{"kind":"shape","id":"sh/ozmtkvi5","slide":14,"bbox":[768,290,220,240]}
+{"kind":"textbox","id":"sh/futcn6h8","slide":14,"text":"N","textPreview":"N","textChars":1,"textLines":1,"bbox":[798,309,160,92]}
+{"kind":"textbox","id":"sh/etkbe103","slide":14,"text":"換題再做","textPreview":"換題再做","textChars":4,"textLines":1,"bbox":[778,433,200,60]}
+{"kind":"shape","id":"sh/i5kv61kv","slide":14,"bbox":[1006,290,220,240]}
+{"kind":"textbox","id":"sh/j6tcz61g","slide":14,"text":"K","textPreview":"K","textChars":1,"textLines":1,"bbox":[1036,309,160,92]}
+{"kind":"textbox","id":"sh/4r2d8b2l","slide":14,"text":"確認懂","textPreview":"確認懂","textChars":3,"textLines":1,"bbox":[1016,433,200,60]}
+{"kind":"textbox","id":"sh/5sbu1gj6","slide":14,"text":"練習：把「直接給我答案」改成「先問我一題」。","textPreview":"練習：把「直接給我答案」改成「先問我一題」。","textChars":22,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/y10rqtk3","slide":14,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/wmk1y6","slide":14,"text":"THINK：讓思考不外包\n時間：09:49–09:54（5 分鐘）\n\n先用 2 分鐘說明五步，2 分鐘兩人改寫一次常見作業要求，1 分鐘回收。AI 可給方向、問題與例子；學生必須用自己的話解釋，再做一道不同題目確認理解。\n\n教材來源：模組二 PDF 第 13–14 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/ah2i3h","slide":15,"title":"模組二　看見風險","textShapes":10}
+{"kind":"textbox","id":"sh/wvm18n6t","slide":15,"text":"模組二　看見風險","textPreview":"模組二　看見風險","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/hwv21s7y","slide":15,"text":"6 分鐘","textPreview":"6 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/mpkj2dob","slide":15,"text":"15 / 27","textPreview":"15 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/7qtkvipw","slide":15,"text":"FACT／OPEN：破解幻覺與同溫層","textPreview":"FACT／OPEN：破解幻覺與同溫層","textChars":18,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/8rm14n6h","slide":15,"text":"讓「看起來合理」變成「找得到依據」","textPreview":"讓「看起來合理」變成「找得到依據」","textChars":17,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/9sv2x872","slide":15,"bbox":[54,282,576,269]}
+{"kind":"textbox","id":"sh/y1kjytof","slide":15,"text":"FACT 查證幻覺","textPreview":"FACT 查證幻覺","textChars":9,"textLines":1,"bbox":[76,300,532,42]}
+{"kind":"textbox","id":"sh/z2tkryp0","slide":15,"text":"找出可疑，追問依據\n查證比對，修正轉化","textPreview":"找出可疑，追問依據 | 查證比對，修正轉化","textChars":19,"textLines":2,"bbox":[76,352,532,183]}
+{"kind":"shape","id":"sh/vydkvuh4","slide":15,"bbox":[650,282,576,269]}
+{"kind":"textbox","id":"sh/ax432p0j","slide":15,"text":"OPEN 跨越同溫層","textPreview":"OPEN 跨越同溫層","textChars":10,"textLines":1,"bbox":[672,300,532,42]}
+{"kind":"textbox","id":"sh/x0v2x4zu","slide":15,"text":"觀察推薦，暫停反應\n探索不同說法，再說明","textPreview":"觀察推薦，暫停反應 | 探索不同說法，再說明","textChars":20,"textLines":2,"bbox":[672,352,532,183]}
+{"kind":"textbox","id":"sh/wzml4zip","slide":15,"text":"練習：圈一個可疑主張，補一個不同來源。","textPreview":"練習：圈一個可疑主張，補一個不同來源。","textChars":19,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/i1kzut8r","slide":15,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/ah2i3h","slide":15,"text":"FACT／OPEN：破解幻覺與同溫層\n時間：09:54–10:00（6 分鐘）\n\n先區分 AI 編造內容與推薦演算法縮窄視野。2 分鐘解說，3 分鐘請學員分享看似合理卻缺乏依據的答案並提出查證路徑，1 分鐘回收。提醒 AI 提供的引用本身也要打開核對。\n\n教材來源：模組二 PDF 第 15–18 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/etujjd","slide":16,"title":"模組二　看見風險","textShapes":10}
+{"kind":"textbox","id":"sh/xcbqxcvy","slide":16,"text":"模組二　看見風險","textPreview":"模組二　看見風險","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/cbi94red","slide":16,"text":"5 分鐘","textPreview":"5 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/nm98r2dw","slide":16,"text":"16 / 27","textPreview":"16 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/2l0ryxwb","slide":16,"text":"SAFE／CARE：守護隱私與真實人際","textPreview":"SAFE／CARE：守護隱私與真實人際","textChars":19,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/porqtcv2","slide":16,"text":"把資料留好，也把人與人的連結留好","textPreview":"把資料留好，也把人與人的連結留好","textChars":16,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/oni907eh","slide":16,"bbox":[54,282,576,269]}
+{"kind":"textbox","id":"sh/7its36d0","slide":16,"text":"SAFE 隱私資安","textPreview":"SAFE 隱私資安","textChars":9,"textLines":1,"bbox":[76,300,532,42]}
+{"kind":"textbox","id":"sh/mhkra1wf","slide":16,"text":"停下、避免、過濾、釋疑\n先移除能辨認身分的資料","textPreview":"停下、避免、過濾、釋疑 | 先移除能辨認身分的資料","textChars":23,"textLines":2,"bbox":[76,352,532,183]}
+{"kind":"shape","id":"sh/wvqxszet","slide":16,"bbox":[650,282,576,269]}
+{"kind":"textbox","id":"sh/xwzylkve","slide":16,"text":"CARE 真實人際","textPreview":"CARE 真實人際","textChars":9,"textLines":1,"bbox":[672,300,532,42]}
+{"kind":"textbox","id":"sh/at8fqpwn","slide":16,"text":"檢查、認知、求助、互動\n重要情緒找可信任的人","textPreview":"檢查、認知、求助、互動 | 重要情緒找可信任的人","textChars":22,"textLines":2,"bbox":[672,352,532,183]}
+{"kind":"textbox","id":"sh/buhwjud8","slide":16,"text":"練習：學生想貼上聊天紀錄，你會怎麼提醒？","textPreview":"練習：學生想貼上聊天紀錄，你會怎麼提醒？","textChars":20,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/f2lob2pc","slide":16,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/etujjd","slide":16,"text":"SAFE／CARE：守護隱私與真實人際\n時間：10:00–10:05（5 分鐘）\n\n2 分鐘介紹，2 分鐘兩人練習回應，1 分鐘收束。SAFE：先停想、避免公開隱私、去識別化、不確定就詢問可信任成人。CARE：覺察情緒、理解 AI 的限制、主動求助、回到真實互動。練習只用虛構情境。\n\n教材來源：模組二 PDF 第 19–20、23–24 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/8z82rz","slide":17,"title":"任務卡 6　/　模組二　看見風險","textShapes":12}
+{"kind":"textbox","id":"sh/1o3il47q","slide":17,"text":"任務卡 6　/　模組二　看見風險","textPreview":"任務卡 6　/　模組二　看見風險","textChars":16,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/0nuhcz65","slide":17,"text":"15 分鐘","textPreview":"15 分鐘","textChars":5,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/ry10fap8","slide":17,"text":"17 / 27","textPreview":"17 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/qxsz6po3","slide":17,"text":"把一個 AI 風險變成課堂小任務","textPreview":"把一個 AI 風險變成課堂小任務","textChars":16,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/d0jihk7e","slide":17,"text":"小組研討：把風險教成學生會做的動作","textPreview":"小組研討：把風險教成學生會做的動作","textChars":17,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/czah8f6t","slide":17,"bbox":[54,282,377.33,260]}
+{"kind":"textbox","id":"sh/3u1gbapc","slide":17,"text":"3 分鐘","textPreview":"3 分鐘","textChars":4,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/2tszi5or","slide":17,"text":"選風險＋年級\n描述一個課堂情境","textPreview":"選風險＋年級 | 描述一個課堂情境","textChars":15,"textLines":2,"bbox":[76,352,333.33,174]}
+{"kind":"shape","id":"sh/kji5wj2l","slide":17,"bbox":[451.33,282,377.33,260]}
+{"kind":"textbox","id":"sh/lkb65o36","slide":17,"text":"8 分鐘","textPreview":"8 分鐘","textChars":4,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/yh0nu9kv","slide":17,"text":"設計學生要做的事\n配上一句防護提醒","textPreview":"設計學生要做的事 | 配上一句防護提醒","textChars":17,"textLines":2,"bbox":[473.33,352,333.33,174]}
+{"kind":"shape","id":"sh/ji943elg","slide":17,"bbox":[848.67,282,377.33,260]}
+{"kind":"textbox","id":"sh/wfi5sz2p","slide":17,"text":"4 分鐘","textPreview":"4 分鐘","textChars":4,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/xgrm143a","slide":17,"text":"寫出要交的證據\n整理並貼到 Padlet","textPreview":"寫出要交的證據 | 整理並貼到 Padlet","textChars":20,"textLines":2,"bbox":[870.67,352,333.33,174]}
+{"kind":"textbox","id":"sh/ad0nq9kj","slide":17,"text":"上傳：情境＋學生任務＋提醒＋學習證據。","textPreview":"上傳：情境＋學生任務＋提醒＋學習證據。","textChars":19,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/7idsfmt4","slide":17,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/8z82rz","slide":17,"text":"任務卡 6｜把一個 AI 風險變成課堂小任務\n時間：10:05–10:20（15 分鐘）\n\n每組選一項風險，不同風險不必全包。示例：六年級查核 AI 對課文的說法，交出原說法、查證來源與修正句。巡組時問：學生真的做了哪個判斷？證據可見嗎？Padlet 由講師提供，無網路時先用紙本，後續同樣能互評。\n\n教材來源：新版大綱第 17 頁；模組二 PDF 第 7、14、16–24 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/j6kf4b","slide":18,"title":"任務卡 9　/　模組二　看見風險","textShapes":12}
+{"kind":"textbox","id":"sh/43u54f6l","slide":18,"text":"任務卡 9　/　模組二　看見風險","textPreview":"任務卡 9　/　模組二　看見風險","textChars":16,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/5436xkn6","slide":18,"text":"10 分鐘","textPreview":"10 分鐘","textChars":5,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/uxsny5oj","slide":18,"text":"18 / 27","textPreview":"18 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/vy1ora54","slide":18,"text":"用紅黃綠燈，幫學生劃出 AI 使用界線","textPreview":"用紅黃綠燈，幫學生劃出 AI 使用界線","textChars":19,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/gzu50f6p","slide":18,"text":"同一項作業，先說清楚哪些部分可以用 AI","textPreview":"同一項作業，先說清楚哪些部分可以用 AI","textChars":20,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/h036tkna","slide":18,"bbox":[54,282,377.33,260]}
+{"kind":"textbox","id":"sh/m9snu5on","slide":18,"text":"綠燈：可用","textPreview":"綠燈：可用","textChars":5,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/7a14na58","slide":18,"text":"練習時請 AI 給提示\n自己寫出推理","textPreview":"練習時請 AI 給提示 | 自己寫出推理","textChars":18,"textLines":2,"bbox":[76,352,333.33,174]}
+{"kind":"shape","id":"sh/vehkzi54","slide":18,"bbox":[451.33,282,377.33,260]}
+{"kind":"textbox","id":"sh/ad8jqdoj","slide":18,"text":"黃燈：需說清楚","textPreview":"黃燈：需說清楚","textChars":7,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/xgz218nu","slide":18,"text":"用 AI 潤飾自己的初稿\n附上修改前後與使用說明","textPreview":"用 AI 潤飾自己的初稿 | 附上修改前後與使用說明","textChars":24,"textLines":2,"bbox":[473.33,352,333.33,174]}
+{"kind":"shape","id":"sh/wfq1s369","slide":18,"bbox":[848.67,282,377.33,260]}
+{"kind":"textbox","id":"sh/jihk3i50","slide":18,"text":"紅燈：不能用","textPreview":"紅燈：不能用","textChars":6,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/ih8judof","slide":18,"text":"獨立評量交 AI 代答\n輸入可識別的個資","textPreview":"獨立評量交 AI 代答 | 輸入可識別的個資","textChars":20,"textLines":2,"bbox":[870.67,352,333.33,174]}
+{"kind":"textbox","id":"sh/54j25sn6","slide":18,"text":"完成時：替一項作業各寫一條綠、黃、紅規範。","textPreview":"完成時：替一項作業各寫一條綠、黃、紅規範。","textChars":21,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/2h4vyl87","slide":18,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/j6kf4b","slide":18,"text":"任務卡 9｜用紅黃綠燈，幫學生劃出 AI 使用界線\n時間：10:20–10:30（10 分鐘）\n\n2 分鐘讀情境，5 分鐘每組訂三色規範，3 分鐘交換檢視。三色是本工作坊討論範例，實際界線須看學習目標、評量要求、校內規範與工具條件。帶著規範進入下一模組，實作 Prompt 時一併使用。\n\n教材來源：課程表第 1 頁模組二；新版大綱第 18 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/15x3af","slide":19,"title":"模組三　教案實作","textShapes":12}
+{"kind":"textbox","id":"sh/9s3m1wvu","slide":19,"text":"模組三　教案實作","textPreview":"模組三　教案實作","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/8ru58ru9","slide":19,"text":"3 分鐘","textPreview":"3 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/zm14v2ds","slide":19,"text":"19 / 27","textPreview":"19 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/yls32xw7","slide":19,"text":"AIPACK：AI × 教學法 × 學科內容","textPreview":"AIPACK：AI × 教學法 × 學科內容","textChars":22,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/lojmxcvy","slide":19,"text":"先找學科難點，再決定 AI 怎麼幫忙","textPreview":"先找學科難點，再決定 AI 怎麼幫忙","textChars":18,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/0na547ud","slide":19,"bbox":[372,271,294,210]}
+{"kind":"shape","id":"sh/byh4r2dg","slide":19,"bbox":[552,271,294,210]}
+{"kind":"shape","id":"sh/qx83yxwb","slide":19,"bbox":[461,385,294,180]}
+{"kind":"textbox","id":"sh/kna1k7ul","slide":19,"text":"AI 技術","textPreview":"AI 技術","textChars":5,"textLines":1,"bbox":[392,297,207,55]}
+{"kind":"textbox","id":"sh/loj2tcb6","slide":19,"text":"教學法","textPreview":"教學法","textChars":3,"textLines":1,"bbox":[641,297,184,55]}
+{"kind":"textbox","id":"sh/ylsjihcf","slide":19,"text":"學科內容","textPreview":"學科內容","textChars":4,"textLines":1,"bbox":[507,480,205,53]}
+{"kind":"textbox","id":"sh/zm1krmt0","slide":19,"text":"AI 賦能\n學習","textPreview":"AI 賦能 | 學習","textChars":8,"textLines":2,"bbox":[534,372,161,98]}
+{"kind":"textbox","id":"sh/czq1g7up","slide":19,"text":"能提供什麼協助？","textPreview":"能提供什麼協助？","textChars":8,"textLines":1,"bbox":[55,340,294,70]}
+{"kind":"textbox","id":"sh/x0z2pcbu","slide":19,"text":"學生怎麼練習？","textPreview":"學生怎麼練習？","textChars":7,"textLines":1,"bbox":[874,340,352,70]}
+{"kind":"textbox","id":"sh/ax8juxcj","slide":19,"text":"交會的目標：學生真的學會。","textPreview":"交會的目標：學生真的學會。","textChars":13,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/7e5oz2hc","slide":19,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/15x3af","slide":19,"text":"AIPACK：AI × 教學法 × 學科內容\n時間：10:30–10:33（3 分鐘）\n\nAIPACK 整合人工智慧、教學與學科內容知識。從具體難點開始，例如學生混淆三角形三心，先決定辨識與說理的活動，再選能提供逐步提示的 AI。\n\n教材來源：模組三 PDF 第 3–4、13 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/delxyx","slide":20,"title":"模組三　教案實作","textShapes":10}
+{"kind":"textbox","id":"sh/vu10j61k","slide":20,"text":"模組三　教案實作","textPreview":"模組三　教案實作","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/u9szq1kf","slide":20,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/503ipgj2","slide":20,"text":"20 / 27","textPreview":"20 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/4zuhwb2h","slide":20,"text":"數位教學雙範疇：幫老師教，也幫學生學","textPreview":"數位教學雙範疇：幫老師教，也幫學生學","textChars":18,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/jyl0nq1w","slide":20,"text":"同一個工具，要分清楚誰在學、誰在做","textPreview":"同一個工具，要分清楚誰在學、誰在做","textChars":17,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/ixczulkb","slide":20,"bbox":[54,282,576,269]}
+{"kind":"textbox","id":"sh/t4nit0jy","slide":20,"text":"幫老師教","textPreview":"幫老師教","textChars":4,"textLines":1,"bbox":[76,300,532,42]}
+{"kind":"textbox","id":"sh/s3e10v2d","slide":20,"text":"共同備課、設計提問\n分析學習證據與調整教學","textPreview":"共同備課、設計提問 | 分析學習證據與調整教學","textChars":21,"textLines":2,"bbox":[76,352,532,183]}
+{"kind":"shape","id":"sh/exkbml4j","slide":20,"bbox":[650,282,576,269]}
+{"kind":"textbox","id":"sh/zytsvql4","slide":20,"text":"幫學生學","textPreview":"幫學生學","textChars":4,"textLines":1,"bbox":[672,300,532,42]}
+{"kind":"textbox","id":"sh/0z2tobm9","slide":20,"text":"理解概念、探究與練習\n表達想法並修正作品","textPreview":"理解概念、探究與練習 | 表達想法並修正作品","textChars":20,"textLines":2,"bbox":[672,352,532,183]}
+{"kind":"textbox","id":"sh/10baxg3u","slide":20,"text":"你今天的設計，主要想幫哪一端？","textPreview":"你今天的設計，主要想幫哪一端？","textChars":15,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/pcbeh8ja","slide":20,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/delxyx","slide":20,"text":"數位教學雙範疇：幫老師教，也幫學生學\n時間：10:33–10:35（2 分鐘）\n\n兩範疇不是互斥選項。一項活動可以同時支持教師與學生，但要說得出學生獲得的學習幫助。請學員選出這次實作主要要改善的一端。\n\n教材來源：模組三 PDF 第 30–33 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/7xu09t","slide":21,"title":"模組三　教案實作","textShapes":12}
+{"kind":"textbox","id":"sh/sri1sjmp","slide":21,"text":"模組三　教案實作","textPreview":"模組三　教案實作","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/dsrilona","slide":21,"text":"5 分鐘","textPreview":"5 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/et0jut4v","slide":21,"text":"21 / 27","textPreview":"21 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/fut0ny50","slide":21,"text":"e度與 TALPer：智慧學習夥伴","textPreview":"e度與 TALPer：智慧學習夥伴","textChars":17,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/0v21w3ml","slide":21,"text":"e度是探究夥伴，不是答案機器","textPreview":"e度是探究夥伴，不是答案機器","textChars":14,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/1wbip8n6","slide":21,"bbox":[54,282,377.33,260]}
+{"kind":"textbox","id":"sh/uxgzi94b","slide":21,"text":"T-TALPer","textPreview":"T-TALPer","textChars":8,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/vyp0bu5w","slide":21,"text":"教師助教\n協助文本、測驗與教案","textPreview":"教師助教 | 協助文本、測驗與教案","textChars":15,"textLines":2,"bbox":[76,352,333.33,174]}
+{"kind":"shape","id":"sh/7it0ve1g","slide":21,"bbox":[451.33,282,377.33,260]}
+{"kind":"textbox","id":"sh/6hkjm90b","slide":21,"text":"S-TALPer","textPreview":"S-TALPer","textChars":8,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/tkvixojm","slide":21,"text":"學科領域學習夥伴\n圍繞學科概念對話","textPreview":"學科領域學習夥伴 | 圍繞學科概念對話","textChars":17,"textLines":2,"bbox":[473.33,352,333.33,174]}
+{"kind":"shape","id":"sh/sj21oji1","slide":21,"bbox":[848.67,282,377.33,260]}
+{"kind":"textbox","id":"sh/jet0re1k","slide":21,"text":"G-TALPer","textPreview":"G-TALPer","textChars":8,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/idkji90z","slide":21,"text":"通用型學習夥伴\n協助提問與想法整理","textPreview":"通用型學習夥伴 | 協助提問與想法整理","textChars":17,"textLines":2,"bbox":[870.67,352,333.33,174]}
+{"kind":"textbox","id":"sh/5gbit4jq","slide":21,"text":"示範提問：「先問我一個問題，等我回答。」","textPreview":"示範提問：「先問我一個問題，等我回答。」","textChars":20,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/e1krm98n","slide":21,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/7xu09t","slide":21,"text":"e度與 TALPer：智慧學習夥伴\n時間：10:35–10:40（5 分鐘）\n\n依教材第 19 頁區分三類角色。講師示範用已能登入的教育 AI 工具進行一輪提問，學生先回答、AI 再提示。介面與權限以現場帳號為準。若無法連線，講師與學員分別扮演 AI 與學生，用本頁提問演練。\n\n教材來源：模組三 PDF 第 18–19 頁（圖像內容已核對）\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/c7amm5","slide":22,"title":"模組三　教案實作","textShapes":14}
+{"kind":"textbox","id":"sh/jqpwjapo","slide":22,"text":"模組三　教案實作","textPreview":"模組三　教案實作","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/ipgva583","slide":22,"text":"8 分鐘","textPreview":"8 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/honeh07i","slide":22,"text":"22 / 27","textPreview":"22 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/wned8vqx","slide":22,"text":"四學模式 × AI 介入點","textPreview":"四學模式 × AI 介入點","textChars":13,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/vm5wfqpc","slide":22,"text":"每一個 AI 介入點，都留下一個人的學習動作","textPreview":"每一個 AI 介入點，都留下一個人的學習動作","textChars":22,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/u1wv6l87","slide":22,"bbox":[54,282,278,260]}
+{"kind":"textbox","id":"sh/1kretk72","slide":22,"text":"學生自學","textPreview":"學生自學","textChars":4,"textLines":1,"bbox":[76,300,234,42]}
+{"kind":"textbox","id":"sh/0jixkfqh","slide":22,"text":"AI 提示難點\n學生先試、再說明","textPreview":"AI 提示難點 | 學生先試、再說明","textChars":16,"textLines":2,"bbox":[76,352,234,174]}
+{"kind":"shape","id":"sh/yxsfqtwr","slide":22,"bbox":[352,282,278,260]}
+{"kind":"textbox","id":"sh/jy1wzydc","slide":22,"text":"組內共學","textPreview":"組內共學","textChars":4,"textLines":1,"bbox":[374,300,234,42]}
+{"kind":"textbox","id":"sh/kzaxs3ex","slide":22,"text":"AI 協助整理\n小組比較並選擇","textPreview":"AI 協助整理 | 小組比較並選擇","textChars":15,"textLines":2,"bbox":[374,352,234,174]}
+{"kind":"shape","id":"sh/l0je18vi","slide":22,"bbox":[650,282,278,260]}
+{"kind":"textbox","id":"sh/a98fmtwv","slide":22,"text":"組間互學","textPreview":"組間互學","textChars":4,"textLines":1,"bbox":[672,300,234,42]}
+{"kind":"textbox","id":"sh/bahwvydg","slide":22,"text":"AI 協助追問\n同儕查證與回饋","textPreview":"AI 協助追問 | 同儕查證與回饋","textChars":15,"textLines":2,"bbox":[672,352,234,174]}
+{"kind":"shape","id":"sh/wvqxo3el","slide":22,"bbox":[948,282,278,260]}
+{"kind":"textbox","id":"sh/xwzexov6","slide":22,"text":"教師導學","textPreview":"教師導學","textChars":4,"textLines":1,"bbox":[970,300,234,42]}
+{"kind":"textbox","id":"sh/u5cfydwz","slide":22,"text":"AI 協助看紀錄\n教師釐清與收束","textPreview":"AI 協助看紀錄 | 教師釐清與收束","textChars":16,"textLines":2,"bbox":[970,352,234,174]}
+{"kind":"textbox","id":"sh/fqlgridk","slide":22,"text":"圈一個環節：AI 做＿＿；學生還要做＿＿。","textPreview":"圈一個環節：AI 做＿＿；學生還要做＿＿。","textChars":21,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/p0z6t4ji","slide":22,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/c7amm5","slide":22,"text":"四學模式 × AI 介入點\n時間：10:40–10:48（8 分鐘）\n\n3 分鐘導讀四學，3 分鐘小組選一個 AI 介入點，2 分鐘回收。四學可依教學需要往返，不必硬排成單向流程。檢視學生在每個階段是否仍有思考與說明。\n\n教材來源：模組三 PDF 第 15、20、24 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/ruxy57","slide":23,"title":"模組三　教案實作","textShapes":10}
+{"kind":"textbox","id":"sh/fad8zqtc","slide":23,"text":"模組三　教案實作","textPreview":"模組三　教案實作","textChars":8,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/e947qlsr","slide":23,"text":"12 分鐘","textPreview":"12 分鐘","textChars":5,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/t8bqxgb6","slide":23,"text":"23 / 27","textPreview":"23 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/s72pobal","slide":23,"text":"國語／數學教案示例解析","textPreview":"國語／數學教案示例解析","textChars":11,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/r6t8v6tg","slide":23,"text":"共讀一份教案，找出 AI 前後的學習證據","textPreview":"共讀一份教案，找出 AI 前後的學習證據","textChars":20,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/65k7m1cv","slide":23,"bbox":[54,282,576,269]}
+{"kind":"textbox","id":"sh/d4fq9kbq","slide":23,"text":"國語《建築界的長頸鹿》","textPreview":"國語《建築界的長頸鹿》","textChars":11,"textLines":1,"bbox":[76,300,532,42]}
+{"kind":"textbox","id":"sh/c3690fa5","slide":23,"text":"課前：預習、字詞與朗讀\n課中：拆解說明文結構\n課後：仿作並比較修正","textPreview":"課前：預習、字詞與朗讀 | 課中：拆解說明文結構 | 課後：仿作並比較修正","textChars":33,"textLines":3,"bbox":[76,352,532,183]}
+{"kind":"shape","id":"sh/ypo3qd8v","slide":23,"bbox":[650,282,576,269]}
+{"kind":"textbox","id":"sh/jqx4zi9g","slide":23,"text":"數學《三角形三心》","textPreview":"數學《三角形三心》","textChars":9,"textLines":1,"bbox":[672,300,532,42]}
+{"kind":"textbox","id":"sh/kr6lsnq1","slide":23,"text":"課前：回顧幾何先備概念\n課中：比較定義、驗證性質\n課後：情境應用與說理","textPreview":"課前：回顧幾何先備概念 | 課中：比較定義、驗證性質 | 課後：情境應用與說理","textChars":35,"textLines":3,"bbox":[672,352,532,183]}
+{"kind":"textbox","id":"sh/lsfm1srm","slide":23,"text":"小組擇一：哪個學習難點值得讓 AI 介入？","textPreview":"小組擇一：哪個學習難點值得讓 AI 介入？","textChars":21,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/tgfa54na","slide":23,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/ruxy57","slide":23,"text":"國語／數學教案示例解析\n時間：10:48–11:00（12 分鐘）\n\n2 分鐘說明兩例，7 分鐘小組共讀一例，3 分鐘標記介入時機與證據。國語依教材第 24、26 頁；數學依第 34–40 頁。數學卡片為課程階段的導讀摘要。提醒分清外心到頂點等距、內心到邊等距、重心與中線及平衡的關係。課本與作圖用來驗證 AI 說法。\n\n教材來源：模組三 PDF 第 24–26、34–40 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/n46rj8","slide":24,"title":"任務卡 7　/　模組三　教案實作","textShapes":14}
+{"kind":"textbox","id":"sh/5k721wni","slide":24,"text":"任務卡 7　/　模組三　教案實作","textPreview":"任務卡 7　/　模組三　教案實作","textChars":16,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/4jyl8rmx","slide":24,"text":"25 分鐘","textPreview":"25 分鐘","textChars":5,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/rmpk365o","slide":24,"text":"24 / 27","textPreview":"24 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/6lg3a143","slide":24,"text":"讓 AI 幫學生想清楚","textPreview":"讓 AI 幫學生想清楚","textChars":11,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/t8725wne","slide":24,"text":"小組載具實作：測試並修正一個不爆雷的提問","textPreview":"小組載具實作：測試並修正一個不爆雷的提問","textChars":20,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/snylcbmt","slide":24,"bbox":[54,278,395,74]}
+{"kind":"textbox","id":"sh/fa9k765k","slide":24,"text":"5 分鐘","textPreview":"5 分鐘","textChars":4,"textLines":1,"bbox":[73,290,106,50]}
+{"kind":"textbox","id":"sh/e9g3e14z","slide":24,"text":"選教案、找時機","textPreview":"選教案、找時機","textChars":7,"textLines":1,"bbox":[181,286,249,58]}
+{"kind":"shape","id":"sh/kbmtczyt","slide":24,"bbox":[54,366,395,74]}
+{"kind":"textbox","id":"sh/lcvu54fe","slide":24,"text":"10 分鐘","textPreview":"10 分鐘","textChars":5,"textLines":1,"bbox":[73,378,106,50]}
+{"kind":"textbox","id":"sh/y94bapg3","slide":24,"text":"測試 Prompt 對話","textPreview":"測試 Prompt 對話","textChars":12,"textLines":1,"bbox":[181,374,249,58]}
+{"kind":"shape","id":"sh/jadc3uxo","slide":24,"bbox":[54,454,395,74]}
+{"kind":"textbox","id":"sh/8z6tgzy5","slide":24,"text":"10 分鐘","textPreview":"10 分鐘","textChars":5,"textLines":1,"bbox":[73,466,106,50]}
+{"kind":"textbox","id":"sh/t0fu94fq","slide":24,"text":"檢查代答，再修正","textPreview":"檢查代答，再修正","textChars":8,"textLines":1,"bbox":[181,462,249,58]}
+{"kind":"shape","id":"sh/6xobepgz","slide":24,"bbox":[475,278,750,274]}
+{"kind":"textbox","id":"sh/7yxc7uxk","slide":24,"text":"可以直接改寫的 Prompt","textPreview":"可以直接改寫的 Prompt","textChars":14,"textLines":1,"bbox":[503,295,693,43]}
+{"kind":"textbox","id":"sh/g36d4je1","slide":24,"text":"你是＿＿年級的學習夥伴。請針對＿＿，\n一次只問一個問題，等我回答再給提示。\n先不要給完整答案，最後請我用自己的話說明。","textPreview":"你是＿＿年級的學習夥伴。請針對＿＿， | 一次只問一個問題，等我回答再給提示。 | 先不要給完整答案，最後請我用自己的話說明。","textChars":59,"textLines":3,"bbox":[503,359,691,177]}
+{"kind":"textbox","id":"sh/h4zudofm","slide":24,"text":"帶走：原版＋修正版 Prompt、一段對話、學習證據。","textPreview":"帶走：原版＋修正版 Prompt、一段對話、學習證據。","textChars":27,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/7a5cvqpk","slide":24,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/n46rj8","slide":24,"text":"任務卡 7｜讓 AI 幫學生想清楚\n時間：11:00–11:25（25 分鐘）\n\n保留完整 25 分鐘：5 分鐘選教案與學生難點，10 分鐘載具測試，10 分鐘修正再測。Prompt 是工作坊可改寫範本。用虛構資料試作，沿用任務卡 9 規範。請保存原版與修正版 Prompt、一段對話和學生最後要交的證據。若模型仍直接代答，記錄失敗並改寫，無須假裝成功。\n\n教材來源：新版大綱第 24 頁；模組三 PDF 第 1–3 頁；Prompt 為工作坊設計\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/znc2vx","slide":25,"title":"任務卡 8　/　模組三　教案實作","textShapes":13}
+{"kind":"textbox","id":"sh/0nqx07q9","slide":25,"text":"任務卡 8　/　模組三　教案實作","textPreview":"任務卡 8　/　模組三　教案實作","textChars":16,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/lozetc7u","slide":25,"text":"25 分鐘","textPreview":"25 分鐘","textChars":5,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/mp8f2h8f","slide":25,"text":"25 / 27","textPreview":"25 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/nqhgvmp0","slide":25,"text":"把作品貼上牆，互相借一個好點子","textPreview":"把作品貼上牆，互相借一個好點子","textChars":15,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/8rqx4rq5","slide":25,"text":"Padlet 上傳與互評：把好點子借回自己的課堂","textPreview":"Padlet 上傳與互評：把好點子借回自己的課堂","textChars":24,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/9szyxw7q","slide":25,"bbox":[54,282,377.33,194]}
+{"kind":"textbox","id":"sh/2t4fqd8v","slide":25,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/3uxwjipg","slide":25,"text":"說明教學設計","textPreview":"說明教學設計","textChars":6,"textLines":1,"bbox":[76,352,333.33,108]}
+{"kind":"shape","id":"sh/ju58nihs","slide":25,"bbox":[451.33,282,377.33,194]}
+{"kind":"textbox","id":"sh/ytw7ed07","slide":25,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/5wnqpszy","slide":25,"text":"說明 Prompt 與修改","textPreview":"說明 Prompt 與修改","textChars":13,"textLines":1,"bbox":[473.33,352,333.33,108]}
+{"kind":"shape","id":"sh/kve9gnid","slide":25,"bbox":[848.67,282,377.33,194]}
+{"kind":"textbox","id":"sh/bql8jihw","slide":25,"text":"1 分鐘","textPreview":"1 分鐘","textChars":4,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/apc7ad0b","slide":25,"text":"聽一個具體回饋","textPreview":"聽一個具體回饋","textChars":7,"textLines":1,"bbox":[870.67,352,333.33,108]}
+{"kind":"textbox","id":"sh/xs3ql8zm","slide":25,"text":"5 分鐘上傳　＋　15 分鐘平行分享（三輪）　＋　5 分鐘修正","textPreview":"5 分鐘上傳　＋　15 分鐘平行分享（三輪）　＋　5 分鐘修正","textChars":31,"textLines":1,"bbox":[65,503,1150,47]}
+{"kind":"textbox","id":"sh/wrupc3i1","slide":25,"text":"我想借用＿＿；我建議再試＿＿。","textPreview":"我想借用＿＿；我建議再試＿＿。","textChars":15,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/etkfmlof","slide":25,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/znc2vx","slide":25,"text":"任務卡 8｜把作品貼上牆，互相借一個好點子\n時間：11:25–11:50（25 分鐘）\n\n25 分鐘安排：5 分鐘上傳，15 分鐘三輪平行分享，每輪 2 分鐘設計＋2 分鐘 Prompt＋1 分鐘回饋，最後 5 分鐘修正與帶走點子。每三組形成一個分享圈，逐組輪流；組數不足可同組分角色補輪，多組分圈同步。上傳學科年級、目標、AI 介入點、原版／修正版 Prompt、去識別化對話與學習證據。無網路用紙本交換。\n\n教材來源：新版大綱第 25 頁；模組三 PDF 第 1 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/9htn3y","slide":26,"title":"任務卡 10　/　Check out　行動收束","textShapes":12}
+{"kind":"textbox","id":"sh/grqhojep","slide":26,"text":"任務卡 10　/　Check out　行動收束","textPreview":"任務卡 10　/　Check out　行動收束","textChars":23,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/hszyh4fa","slide":26,"text":"8 分鐘","textPreview":"8 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/6lozipwn","slide":26,"text":"26 / 27","textPreview":"26 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"textbox","id":"sh/7mhgbux8","slide":26,"text":"帶走一個回校後真的做得到的第一步","textPreview":"帶走一個回校後真的做得到的第一步","textChars":16,"textLines":1,"bbox":[54,85,1172,110]}
+{"kind":"textbox","id":"sh/8nqhkzet","slide":26,"text":"回看今天的自己，選一個小小的開始","textPreview":"回看今天的自己，選一個小小的開始","textChars":16,"textLines":1,"bbox":[57,203,1166,43]}
+{"kind":"shape","id":"sh/tozyd4fy","slide":26,"bbox":[54,282,377.33,260]}
+{"kind":"textbox","id":"sh/yxozepwb","slide":26,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[76,300,333.33,42]}
+{"kind":"textbox","id":"sh/jyxg7uxw","slide":26,"text":"最亮的一張卡\n今天哪個做法最有用？","textPreview":"最亮的一張卡 | 今天哪個做法最有用？","textChars":17,"textLines":2,"bbox":[76,352,333.33,174]}
+{"kind":"shape","id":"sh/3618z6x8","slide":26,"bbox":[451.33,282,377.33,260]}
+{"kind":"textbox","id":"sh/2ls7q1wn","slide":26,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[473.33,300,333.33,42]}
+{"kind":"textbox","id":"sh/p8jq1gfe","slide":26,"text":"目前卡關處\n我還需要哪種支持？","textPreview":"目前卡關處 | 我還需要哪種支持？","textChars":15,"textLines":2,"bbox":[473.33,352,333.33,174]}
+{"kind":"shape","id":"sh/o7apsbet","slide":26,"bbox":[848.67,282,377.33,260]}
+{"kind":"textbox","id":"sh/bal836x4","slide":26,"text":"4 分鐘","textPreview":"4 分鐘","textChars":4,"textLines":1,"bbox":[870.67,300,333.33,42]}
+{"kind":"textbox","id":"sh/q9c7u1wz","slide":26,"text":"回校第一步\n何時、哪班、試什麼？","textPreview":"回校第一步 | 何時、哪班、試什麼？","textChars":16,"textLines":2,"bbox":[870.67,352,333.33,174]}
+{"kind":"textbox","id":"sh/dc3q5gfa","slide":26,"text":"我會在＿＿，和＿＿班試＿＿，用＿＿看見學習。","textPreview":"我會在＿＿，和＿＿班試＿＿，用＿＿看見學習。","textChars":22,"textLines":1,"bbox":[105,578,1070,54]}
+{"kind":"image","id":"im/uhov6t0j","slide":26,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/9htn3y","slide":26,"text":"任務卡 10｜帶走一個回校後真的做得到的第一步\n時間：11:50–11:58（8 分鐘）\n\n2 分鐘回顧任務卡 4 的增能目標，2 分鐘寫亮點與卡關，最後 4 分鐘每人先寫行動句，再在組內輪流簡短分享。挑可在一堂課試行的做法，約一位夥伴回校後交換結果。\n\n教材來源：課程表第 2 頁；新版大綱第 26 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}
+{"kind":"slide","id":"sl/9aooqx","slide":27,"title":"Check out　行動收束","textShapes":6}
+{"kind":"textbox","id":"sh/yh4jq18j","slide":27,"text":"Check out　行動收束","textPreview":"Check out　行動收束","textChars":14,"textLines":1,"bbox":[54,28,1020,32]}
+{"kind":"textbox","id":"sh/zidkz694","slide":27,"text":"2 分鐘","textPreview":"2 分鐘","textChars":4,"textLines":1,"bbox":[1100,28,126,32]}
+{"kind":"textbox","id":"sh/876lwbq1","slide":27,"text":"27 / 27","textPreview":"27 / 27","textChars":7,"textLines":1,"bbox":[1030,663,98,28]}
+{"kind":"shape","id":"sh/98f25gr6","slide":27,"bbox":[44,85,1192,487]}
+{"kind":"textbox","id":"sh/ml43ul8v","slide":27,"text":"攜手同行：\n開創以人為中心的課堂","textPreview":"攜手同行： | 開創以人為中心的課堂","textChars":16,"textLines":2,"bbox":[92,124,1085,155]}
+{"kind":"textbox","id":"sh/76xk369g","slide":27,"text":"讓 AI 幫我們把教學做得更清楚、更安全、更有人味","textPreview":"讓 AI 幫我們把教學做得更清楚、更安全、更有人味","textChars":25,"textLines":1,"bbox":[94,304,1050,70]}
+{"kind":"textbox","id":"sh/wb6l0vqx","slide":27,"text":"真正掌舵的，\n始終是看見學生的你。","textPreview":"真正掌舵的， | 始終是看見學生的你。","textChars":17,"textLines":2,"bbox":[94,407,1050,126]}
+{"kind":"image","id":"im/8vad83it","slide":27,"name":"","alt":"淺色海洋航行背景，底部小船與燈塔","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/9aooqx","slide":27,"text":"攜手同行：開創以人為中心的課堂\n時間：11:58–12:00（2 分鐘）\n\n邀請學員把剛剛的行動句留在任務紀錄中。謝謝彼此的分享與回饋，回到人與人的真實連結，完成三小時航程。\n\n教材來源：新版大綱第 27 頁；模組一 PDF 第 2 頁\n背景：OpenAI imagegen 生成海洋教學背景，2026-09-14。"}

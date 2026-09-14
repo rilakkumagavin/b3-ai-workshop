@@ -1,0 +1,11 @@
+
+# Private credentials must never be committed
+.env
+.env.*
+!.env.example
+.clasprc.json
+*client_secret*.json
+*service-account*.json
+credentials.json
+*.pem
+*.key

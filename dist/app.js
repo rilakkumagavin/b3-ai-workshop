@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const KEY = 'b3-navigation-demo-v1';
-  const initial = { completed: [1, 2], fields: {} };
+  const initial = { completed: [], fields: {} };
   let state;
   try { state = JSON.parse(sessionStorage.getItem(KEY)) || structuredClone(initial); } catch { state = structuredClone(initial); }
   if (!Array.isArray(state.completed) || !state.fields || typeof state.fields !== 'object') state = structuredClone(initial);
@@ -20,9 +20,35 @@
   }
   $('.menu-toggle').addEventListener('click', e => { const open = $('.nav').classList.toggle('open'); e.currentTarget.setAttribute('aria-expanded', String(open)); });
   document.querySelectorAll('[data-task]').forEach(btn => btn.addEventListener('click', () => { const id = Number(btn.dataset.task); state.completed = state.completed.includes(id) ? state.completed.filter(n => n !== id) : [...state.completed, id]; save(); progress(); announce(`任務卡 ${id} 的示範進度已更新`); }));
-  document.querySelectorAll('[data-save]').forEach(button => button.addEventListener('click', () => { const form = button.closest('form'); if (!form.reportValidity()) return; form.querySelectorAll('[name]').forEach(el => { state.fields[el.name] = el.value; }); save(); announce('已保留在這次瀏覽的示範筆記中'); }));
-  document.querySelectorAll('[name]').forEach(el => { if (Object.hasOwn(state.fields, el.name) && typeof state.fields[el.name] === 'string') el.value = state.fields[el.name]; });
-  document.querySelectorAll('form').forEach(form => form.addEventListener('submit', e => e.preventDefault()));
+  document.querySelectorAll('form[data-api-action]').forEach(form => {
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (form.dataset.sending === 'true' || !form.reportValidity()) return;
+      const button = form.querySelector('[data-save]');
+      const status = form.querySelector('[data-submit-status]');
+      const data = Object.fromEntries(new FormData(form).entries());
+      // Preserve a draft before attempting the request; never reset the form on error.
+      Object.entries(data).forEach(([name,value]) => { state.fields[form.dataset.apiAction + ":" + name] = value; });
+      save();
+      form.dataset.sending = 'true'; button.disabled = true;
+      status.textContent = '送出中……';
+      try {
+        const extra=Object.fromEntries([...form.querySelectorAll('[data-sheet-field]')].map(e=>[e.dataset.sheetField,e.type==='checkbox'?String(e.checked):e.value]));
+        const result = await window.B3API.submit(form.dataset.apiAction, data, {canonical:form.dataset.contract==='canonical',sheetData:extra});
+        status.textContent = result.mode === 'local' ? '儲存成功！已存入本機離線資料庫，尚未傳送到 Google 試算表。' : '送出成功！已寫入 Google 試算表。';
+        status.dataset.state = 'success';
+        form.dispatchEvent(new CustomEvent('b3:saved', {bubbles:true,detail:result}));
+        announce(status.textContent);
+      } catch (error) {
+        status.textContent = '送出失敗：' + error.message + ' 您的輸入內容仍保留在表單中。';
+        status.dataset.state = 'error';
+      } finally { form.dataset.sending = 'false'; button.disabled = false; }
+    });
+  });
+  document.querySelectorAll('form [name]').forEach(el => { const key = el.form.dataset.apiAction + ':' + el.name; if (Object.hasOwn(state.fields, key) && typeof state.fields[key] === 'string') el.value = state.fields[key]; });
+  document.dispatchEvent(new Event('b3:restored'));
+  const modeBadge = document.querySelector('.demo-badge');
+  if(modeBadge) modeBadge.textContent = window.B3API.mode() === 'local' ? '離線測試模式' : '試算表連線模式';
   const risk = $('#check-risk');
   if (risk) risk.addEventListener('click', () => { const selected = document.querySelector('input[name=risk-answer]:checked'); $('#risk-result').textContent = !selected ? '先選一個你會採取的做法。' : selected.value === 'source' ? '答對了！先找到原始公告，核對發布單位與日期，再決定是否轉傳。這正是 STEP 的練習。' : '再想一想：流暢的文字或很多人轉傳，都不能取代原始證據。試著從來源和時間開始。'; });
   $('#copy-prompt')?.addEventListener('click', async () => { const value = $('#prompt').value; try { await navigator.clipboard.writeText(value); announce('Prompt 已複製，可以貼到你使用的 AI 工具'); } catch { $('#prompt').focus(); $('#prompt').select(); announce('已選取 Prompt，請按 Ctrl+C 複製'); } });

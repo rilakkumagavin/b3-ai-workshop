@@ -4,3 +4,5 @@
 /* Keep the illustration below the reading area at wide banner ratios. */
 .hero{background-size:100% 100%}
 
+
+button:disabled{opacity:.6;cursor:wait}.result[data-state="error"]{background:#fbe0db;color:#8a3022}

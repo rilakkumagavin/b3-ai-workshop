@@ -1,0 +1,45 @@
+Inspect result written to file: C:\Users\user\Documents\Codex\B3_workshop_codex_package_download\.build\candidate.pptx.inspect.ndjson
+Exported draft, minutes: 180
+Rendered 1
+Rendered 2
+Rendered 3
+Rendered 4
+Rendered 5
+Rendered 6
+Rendered 7
+Rendered 8
+Rendered 9
+Rendered 10
+Rendered 11
+Rendered 12
+Rendered 13
+Rendered 14
+Rendered 15
+Rendered 16
+Rendered 17
+Rendered 18
+Rendered 19
+Rendered 20
+Rendered 21
+Rendered 22
+Rendered 23
+Rendered 24
+Rendered 25
+Rendered 26
+Rendered 27
+node:internal/fs/promises:697
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: EEXIST: file already exists, open 'C:\Users\user\Documents\Codex\B3_workshop_codex_package_download\.build\validation.json'
+    at async open (node:internal/fs/promises:697:25)
+    at async Object.writeFile (node:internal/fs/promises:1317:14)
+    at async finalizePresentation (file:///C:/Users/user/.codex/plugins/cache/openai-primary-runtime/presentations/26.909.12148/skills/presentations/container_tools/artifact_tool_utils.mjs:1058:5)
+    at async file:///C:/Users/user/Documents/Codex/B3_workshop_codex_package_download/.build/build.mjs:90:14 {
+  errno: -4075,
+  code: 'EEXIST',
+  syscall: 'open',
+  path: 'C:\\Users\\user\\Documents\\Codex\\B3_workshop_codex_package_download\\.build\\validation.json'
+}
+
+Node.js v24.19.0

@@ -1,0 +1,2 @@
+const {chromium}=require('playwright');(async()=>{const b=await chromium.launch({channel:'msedge',headless:true});const p=await b.newPage();let errors=[];p.on('pageerror',e=>errors.push(e.message));for(const n of ['index','checkin','guide','literacy','lesson','checkout','dashboard','resources'])await p.goto('https://rilakkumagavin.github.io/b3-ai-workshop/'+n+'.html');await b.close();if(errors.length)throw Error(errors.join('\n'));console.log('PASS eight pages load without JS errors');})().catch(e=>{console.error(e);process.exit(1)});
+
