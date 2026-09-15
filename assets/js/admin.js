@@ -19,6 +19,16 @@
     $('#admin-logout').onclick=async()=>{try{await call('adminLogout');lock();status('已登出。');}catch(e){lock();status('本頁已鎖定；伺服器登出未確認，登入最長一小時後失效。');}};
     $('#admin-reload').onclick=async()=>{try{fill(await call('adminGetSettings'));status('已讀取最新設定。');}catch(e){status(e.message);}};
     $('#admin-config').onsubmit=async e=>{e.preventDefault();const b=e.target.querySelector('button[type=submit]');b.disabled=true;status('正在檢查試算表及儲存……');try{fill(await call('adminSaveSettings',{revision,title:$('#activity-title').value.trim(),spreadsheetUrl:$('#sheet-url').value.trim(),submissionsOpen:$('#activity-open').checked}));status('已儲存，全班將在下次更新時套用。');B3Live.refresh();}catch(e){status(e.message);}finally{b.disabled=false;}};
+    const clear=document.createElement('section');clear.className='note';
+    clear.innerHTML='<h3>清除本場資料</h3><p>先取消勾選「開放學員報到及提交成果」並儲存。清除會移除報到、任務回答、作品及留言，保留表頭與設定，並先建立完整試算表備份。</p><form id="clear-data-form"><div class="field"><label for="clear-confirmation">輸入「清除本場資料」確認</label><input id="clear-confirmation" required autocomplete="off"></div><button type="submit" class="button secondary">備份並清除本場資料</button></form><p id="clear-status" role="status" aria-live="polite"></p>';
+    root.append(clear);
+    $('#clear-data-form').onsubmit=async e=>{e.preventDefault();const output=$('#clear-status'),confirmation=$('#clear-confirmation').value;
+      if(confirmation!=='清除本場資料'){output.textContent='請完整輸入「清除本場資料」。';return;}
+      const button=e.target.querySelector('button');button.disabled=true;output.textContent='正在備份並清除，請勿重複操作……';
+      try{const r=await call('adminSaveSettings',{operation:'clearData',revision,confirmation});if(!r.settings)throw Error('請先更新 admin-api.gs 並部署新版本。');fill(r.settings);$('#clear-confirmation').value='';output.textContent='已清除 '+r.clearedRows+' 筆資料，活動維持暫停。';
+        if(r.backupUrl){const link=document.createElement('a');link.href=r.backupUrl;link.target='_blank';link.rel='noopener noreferrer';link.textContent=' 開啟清除前備份';output.append(link);}B3Live.refresh();
+      }catch(error){output.textContent=error.message;}finally{button.disabled=false;}
+    };
     $('#activity-title').focus();
   }
   window.addEventListener('pagehide',lock);lock();

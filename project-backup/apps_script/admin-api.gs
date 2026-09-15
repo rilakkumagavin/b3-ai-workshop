@@ -28,6 +28,23 @@ function b3AdminRoute_(body){
     if(body.action!=='adminSaveSettings')b3Fail_('UNKNOWN_ACTION','不支援的管理操作。');
     const data=body.payload;
     if(data.revision!==b3PublicState_().revision)b3Fail_('CONFLICT','其他主持人已更新設定，請重新讀取後再儲存。');
+    if(data.operation==='clearData'){
+      if(data.confirmation!=='清除本場資料')b3Fail_('CONFIRM_REQUIRED','請輸入「清除本場資料」確認。');
+      if(b3PublicState_().submissionsOpen)b3Fail_('ACTIVITY_OPEN','請先儲存暫停提交，再清除資料。');
+      const book=b3Book_(),specs=Object.values(B3_SHEET_CONTRACT);
+      const sheets=specs.map(s=>b3Sheet_(book,s,false)).filter(Boolean);
+      const count=sheets.reduce((n,s)=>n+Math.max(0,s.getLastRow()-1),0);
+      if(!count)return {settings:b3AdminSettings_(),clearedRows:0};
+      // Backup must finish before any source content is cleared.
+      const backup=book.copy(book.getName()+' 清除前備份 '+new Date().toISOString());
+      p.setProperty('LAST_CLEAR_BACKUP_URL',backup.getUrl());
+      p.setProperty('CONFIG_REVISION',Utilities.getUuid());
+      try{
+        sheets.forEach(s=>{const rows=s.getLastRow()-1;if(rows>0)s.getRange(2,1,rows,s.getLastColumn()).clearContent();});
+        SpreadsheetApp.flush();
+      }catch(e){b3Fail_('CLEAR_PARTIAL','清除未全部完成，請在 Google 雲端硬碟查看「清除前備份」，重新讀取設定後再處理。');}
+      return {settings:b3AdminSettings_(),clearedRows:count,backupUrl:backup.getUrl()};
+    }
     if(typeof data.title!=='string'||!data.title.trim()||data.title.length>80||typeof data.submissionsOpen!=='boolean')b3Fail_('INVALID_SETTINGS','請填寫 1–80 字活動名稱與有效活動狀態。');
     const match=typeof data.spreadsheetUrl==='string'&&data.spreadsheetUrl.match(/^https:\/\/docs\.google\.com\/spreadsheets\/d\/([A-Za-z0-9_-]+)(?:\/[^\s]*)?$/);
     if(!match)b3Fail_('INVALID_SHEET_URL','請貼上 Google 試算表網址。');

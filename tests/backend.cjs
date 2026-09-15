@@ -33,4 +33,22 @@ assert.equal(post('adminLogout',{},token).success,true);fail(post('adminGetSetti
 login=post('adminLogin',{password:'a'.repeat(40)});now+=3601000;fail(post('adminGetSettings',{},login.data.token),'UNAUTHORIZED');
 login=post('adminLogin',{password:'a'.repeat(40)});props.set('ADMIN_ACCESS_KEY','b'.repeat(40));fail(post('adminGetSettings',{},login.data.token),'UNAUTHORIZED');
 assert.equal(locked,false);console.log('PASS: authorization, throttle, expiry, logout, credential rotation, privacy, shared participants, schema checks, switch preservation, revision conflict, pause/resume.');
+const clearLogin=post('adminLogin',{password:'b'.repeat(40)}).data.token;
+const clearPayload={operation:'clearData',revision:props.get('CONFIG_REVISION'),confirmation:'清除本場資料'};
+fail(post('adminSaveSettings',clearPayload),'UNAUTHORIZED');
+fail(post('adminSaveSettings',{...clearPayload,confirmation:'錯誤'},clearLogin),'CONFIRM_REQUIRED');
+fail(post('adminSaveSettings',clearPayload,clearLogin),'ACTIVITY_OPEN');
+props.set('SUBMISSIONS_OPEN','false');
+const clearBook=books.get('replacement'),before=JSON.stringify(clearBook.getSheetByName('participants').rows);
+clearBook.copy=()=>{throw Error('backup failed');};
+fail(post('adminSaveSettings',clearPayload,clearLogin),'INTERNAL_ERROR');
+assert.equal(JSON.stringify(clearBook.getSheetByName('participants').rows),before);
+let backupRows;
+clearBook.copy=()=>{backupRows=JSON.stringify(clearBook.getSheetByName('participants').rows);return {getUrl:()=> 'https://docs.google.com/spreadsheets/d/test-backup/edit'};};
+for(const [name,sheet] of clearBook.sheets){const originalRange=sheet.getRange.bind(sheet);sheet.getRange=(r,c,n,m)=>({...originalRange(r,c,n,m),clearContent:()=>{assert.equal(r,2);sheet.rows.splice(1);}});}
+const cleared=post('adminSaveSettings',clearPayload,clearLogin);assert.equal(cleared.success,true);assert.equal(cleared.data.clearedRows,1);assert.equal(backupRows,before);
+assert.equal(clearBook.getSheetByName('participants').getLastRow(),1);assert.equal(clearBook.getSheetByName('settings').getLastRow(),1);
+assert.equal(props.get('SUBMISSIONS_OPEN'),'false');fail(post('adminSaveSettings',clearPayload,clearLogin),'CONFLICT');
+props.set('SUBMISSIONS_OPEN','true');
+console.log('PASS: clear authorization, exact confirmation, pause requirement, backup failure preserves data, backup before clear, headers/settings preserved, stale retry rejected.');
 module.exports={post,props};
