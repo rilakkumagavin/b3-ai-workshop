@@ -1,4 +1,4 @@
-// ADMIN_ACCESS_KEY belongs only in Script Properties: random, at least 32 characters.
+// ADMIN_ACCESS_KEY belongs only in Script Properties: random, at least 6 characters.
 function b3AdminDigest_(v){return Utilities.base64EncodeWebSafe(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,v));}
 function b3AdminEqual_(a,b){const x=b3AdminDigest_(a),y=b3AdminDigest_(b);let d=x.length^y.length;for(let i=0;i<x.length;i++)d|=x.charCodeAt(i)^y.charCodeAt(i);return d===0;}
 function b3PublicState_(){const p=PropertiesService.getScriptProperties();return {title:p.getProperty('WORKSHOP_TITLE')||'B3 AI 共學工作坊',submissionsOpen:p.getProperty('SUBMISSIONS_OPEN')!=='false',revision:p.getProperty('CONFIG_REVISION')||'initial'};}
@@ -13,7 +13,7 @@ function b3AdminRoute_(body){
   if(!lock.tryLock(10000))b3Fail_('BUSY','操作進行中，請稍後再試。');
   try{
     if(body.action==='adminLogin'){
-      const key=p.getProperty('ADMIN_ACCESS_KEY');if(!key||key.length<32)b3Fail_('ADMIN_NOT_CONFIGURED','請先由部署者設定主持人通行碼（至少 32 字元）。');
+      const key=p.getProperty('ADMIN_ACCESS_KEY');if(!key||key.length<6)b3Fail_('ADMIN_NOT_CONFIGURED','請先由部署者設定主持人通行碼（至少 6 字元）。');
       const now=Date.now();let limit=JSON.parse(p.getProperty('ADMIN_LOGIN_LIMIT')||'{"count":0,"until":0}');
       if(now>=limit.until)limit={count:0,until:now+300000};
       if(limit.count>=5)b3Fail_('RATE_LIMITED','嘗試次數過多，請五分鐘後再試。');

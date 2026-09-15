@@ -2,7 +2,7 @@
 
 ## 2026-09-15 互動共學新版
 
-已加入共學大廳、後端驗證的主持人控制台、共用試算表設定、開放／暫停提交，以及成果自動更新。請以 [新版部署說明](DEPLOYMENT.md) 為準；下方保留早期靜態示範紀錄。
+已加入共學大廳、後端驗證的主持人控制台、共用試算表設定、開放／暫停提交，以及成果自動更新。主持人通行碼至少 6 字元。請以 [新版部署說明](DEPLOYMENT.md) 為準；下方保留早期靜態示範紀錄。
 
 網站來源為根目錄 `generate.py`、`assets/js/`、`styles.css` 與 `app.js`。執行 `python generate.py` 會同步產生根目錄與 `dist/` 網頁。後端使用 `project-backup/apps_script/Code.gs` 與 `admin-api.gs`。
 

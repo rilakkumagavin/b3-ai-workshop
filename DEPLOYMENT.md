@@ -9,7 +9,7 @@
 ## 升級順序
 
 1. 在既有 Apps Script 專案更新 `Code.gs`，並新增 `admin-api.gs`，內容分別使用 `project-backup/apps_script/` 同名檔案。不要再同時貼入舊的 server-v3.js 或 reusable-database.gs。
-2. 在 Apps Script 專案設定的 Script Properties 設定 `ADMIN_ACCESS_KEY`，使用密碼管理器產生至少 32 字元、至多 256 字元的隨機通行碼。不把通行碼放進 HTML、config.js、試算表或 Git。
+2. 在 Apps Script 專案設定的 Script Properties 設定 `ADMIN_ACCESS_KEY`，使用至少 6 字元、至多 256 字元的通行碼。不把通行碼放進 HTML、config.js、試算表或 Git。
 3. 保留原有 `SPREADSHEET_ID` 與 `WORKSHOP_ID`。可選填 `WORKSHOP_TITLE`；`SUBMISSIONS_OPEN=false` 表示暫停提交，未設定時預設開放。
 4. 在管理部署更新既有網頁應用程式版本，沿用 `/exec` 網址。執行者需能編輯預定使用的試算表。Google 試算表共用維持受限制；學員不需要取得試算表權限。
 5. 確認 `assets/js/config.js` 的固定 Web App URL 指向此部署。它是公開 API 地址，不是秘密。執行 `python generate.py`，發布根目錄網站或 dist 內容到原 GitHub Pages。
