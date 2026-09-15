@@ -1,7 +1,7 @@
 (() => {
   if(!document.querySelector('#dashboard-panels'))return;
   const $=s=>document.querySelector(s), titles=['AI 經驗文字雲','今日學習目標統計','AI 素養四面向全班平均','AI 風險任務成果牆','Prompt 修正作品牆','班級 AI 使用規範牆','回校第一步行動牆'];
-  let data,active=null;const hidden=new Set(),pages={};
+  let data,painted='',active=null;const hidden=new Set(),pages={};
   const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
   const button=(text,fn)=>{const b=el('button',text,'button secondary');b.type='button';b.addEventListener('click',fn);return b;};
   function render(target,index,projecting=false){
@@ -22,7 +22,17 @@
   }
   titles.forEach((title,index)=>{const s=el('section',undefined,'card dashboard-panel'),header=el('div',undefined,'section-head'),body=el('div');header.append(el('h2',title),button('展開投影',()=>{active=index;$('#projection-title').textContent=title;render($('#projection-content'),index,true);$('#projection-dialog').showModal();}));s.append(header,body);body.dataset.panel=index;$('#dashboard-panels').append(s);});
   $('#projection-close').addEventListener('click',()=>$('#projection-dialog').close());$('#projection-dialog').addEventListener('close',()=>active=null);
-  async function refresh(){const b=$('#dashboard-refresh');b.disabled=true;$('#dashboard-status').textContent='讀取資料中……';try{const result=await B3API.getDashboardData();if(!result.data.projection)throw new Error('請更新 Apps Script 至講師投影版。');data=result.data;document.querySelectorAll('[data-panel]').forEach(n=>render(n,Number(n.dataset.panel)));if(active!==null)render($('#projection-content'),active,true);$('#dashboard-status').textContent=`${result.mode==='local'?'本機離線資料，尚未跨裝置同步':'工作坊資料'} · 更新於 ${new Date().toLocaleTimeString('zh-TW')}`;}catch(e){$('#dashboard-status').textContent='更新失敗：'+e.message+(data?' 保留上次成功讀取的資料。':'');}finally{b.disabled=false;}}
-  $('#dashboard-refresh').addEventListener('click',refresh);refresh();
+  B3Live.subscribe((result,error)=>{
+    if(error){$('#dashboard-status').textContent='更新失敗：'+error.message+(data?' 保留上次成果。':'');return;}
+    if(!result.data.projection){$('#dashboard-status').textContent='請升級 Apps Script 後端。';return;}
+    const fingerprint=JSON.stringify([result.data.projection,result.data.radar]);
+    data=result.data;
+    if(painted!==fingerprint&&!$('#dashboard-panels').contains(document.activeElement)&&!$('#projection-content').contains(document.activeElement)){
+      document.querySelectorAll('[data-panel]').forEach(n=>render(n,Number(n.dataset.panel)));
+      if(active!==null)render($('#projection-content'),active,true);painted=fingerprint;
+    }
+    $('#dashboard-status').textContent='已同步全班成果 · '+new Date().toLocaleTimeString('zh-TW');
+  });
+  $('#dashboard-refresh').addEventListener('click',()=>{painted='';B3Live.refresh();});
   const style=el('style');style.textContent='.projection-wall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.projection-card{padding:22px;border:1px solid #b7d6d5;border-radius:22px;background:#f2faf8;overflow-wrap:anywhere}.projection-card p{white-space:pre-wrap}.projection-card h3{margin:16px 0 6px}.dashboard-radar{display:block;max-width:480px;width:100%;margin:auto}#projection-dialog{box-sizing:border-box;width:100vw;max-width:none;height:100dvh;max-height:none;border:0;margin:0;background:#f6faf9;color:#163e50;padding:32px;overflow:auto}#projection-dialog header{display:flex;justify-content:space-between;align-items:center;gap:20px;position:sticky;top:-32px;background:#f6faf9;z-index:1}#projection-dialog h2{font-size:36px}#projection-content{font-size:24px}#projection-content h3{font-size:26px}#projection-content .word-cloud{min-height:55vh}#projection-content .dashboard-radar{max-width:560px}@media(max-width:700px){.projection-wall{grid-template-columns:1fr}#projection-dialog{padding:16px}#projection-dialog h2{font-size:25px}.dashboard-panel .section-head{display:block}}';document.head.append(style);
 })();

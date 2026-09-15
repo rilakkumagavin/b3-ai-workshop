@@ -1,8 +1,10 @@
+> 歷史部署紀錄；新版管理功能尚未部署。舊 Git 提交仍可能保有原始網址。
+
 # 正式部署記錄
 
 - 網站：https://rilakkumagavin.github.io/b3-ai-workshop/
-- 網址總覽：https://docs.google.com/spreadsheets/d/1C-vklLDu7AGRDZ3qZhOJOiTudeio3vgdZXh8pFyrT4Q/edit#gid=14001
-- Apps Script 專案：1VmjavKN-Hax4bnqPOFtMmyKL12J30AVJvaIw963lT4Yx9xUoC5HGOoD4
+- 網址總覽：已從公開備份移除，請由擁有者的私人紀錄查閱。
+- Apps Script 專案：已從公開備份移除。
 - 目前部署版本：2（提交收據確認）
 - GitHub 發布提交：e5ee6da
 - 試算表共用：已讀取 Drive permissions，只有擁有者，未公開共用。

@@ -1,0 +1,36 @@
+const fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const path=require('node:path');const base=path.join(__dirname,'..');
+let now=Date.now();const props=new Map([['ADMIN_ACCESS_KEY','a'.repeat(40)],['SPREADSHEET_ID','original']]);const cache=new Map();let locked=false;
+const properties={getProperty:k=>props.get(k)||null,setProperty:(k,v)=>props.set(k,v),deleteProperty:k=>props.delete(k),setProperties:o=>Object.entries(o).forEach(([k,v])=>props.set(k,v))};
+class Sheet{constructor(){this.rows=[];}getLastRow(){return this.rows.length;}getLastColumn(){return this.rows[0]?.length||0;}setFrozenRows(){}getRange(r,c,n,m){return{getValues:()=>Array.from({length:n},(_,i)=>Array.from({length:m},(_,j)=>this.rows[r+i-1]?.[c+j-1]||'')),setValues:v=>v.forEach((row,i)=>{this.rows[r+i-1]??=[];row.forEach((x,j)=>this.rows[r+i-1][c+j-1]=x);})};}}
+class Book{constructor(){this.sheets=new Map();}getName(){return 'Test';}getSheetByName(n){return this.sheets.get(n)||null;}insertSheet(n){const s=new Sheet();this.sheets.set(n,s);return s;}}
+const books=new Map(['original','replacement','bad'].map(k=>[k,new Book()]));
+const context={console,Date,Map,Set,PropertiesService:{getScriptProperties:()=>properties},CacheService:{getScriptCache:()=>({get:k=>{const v=cache.get(k);return v&&v.until>now?v.value:null;},put:(k,value,ttl)=>cache.set(k,{value,until:now+ttl*1000}),remove:k=>cache.delete(k)})},LockService:{getScriptLock:()=>({tryLock:()=>{if(locked)return false;locked=true;return true;},releaseLock:()=>locked=false})},SpreadsheetApp:{openById:id=>{if(!books.has(id))throw Error('private ID');return books.get(id);},flush(){}},Utilities:{getUuid:()=>crypto.randomUUID(),DigestAlgorithm:{SHA_256:'sha256'},computeDigest:(_,s)=>crypto.createHash('sha256').update(s).digest(),base64EncodeWebSafe:b=>Buffer.from(b).toString('base64url')},ContentService:{MimeType:{JSON:'json'},createTextOutput:s=>({setMimeType:()=>s})}};
+vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(base,'project-backup/apps_script/Code.gs'),'utf8')+'\n'+fs.readFileSync(path.join(base,'project-backup/apps_script/admin-api.gs'),'utf8'),context);
+const post=(action,payload={},token)=>JSON.parse(context.doPost({postData:{contents:JSON.stringify({action,payload,token})}}));
+const fail=(r,code)=>{assert.equal(r.success,false);assert.equal(r.error.code,code);};
+fail(post('adminGetSettings'),'UNAUTHORIZED');fail(post('adminSaveSettings',{}),'UNAUTHORIZED');
+for(let i=0;i<5;i++)fail(post('adminLogin',{password:'wrong'}),'UNAUTHORIZED');
+fail(post('adminLogin',{password:'a'.repeat(40)}),'RATE_LIMITED');props.delete('ADMIN_LOGIN_LIMIT');
+let login=post('adminLogin',{password:'a'.repeat(40)});assert.equal(login.success,true);const token=login.data.token;
+context.setupSheets();
+const a=post('submitParticipant',{participant_id:'p-one',name:'Alpha',group_id:'1'}),b=post('submitParticipant',{participant_id:'p-two',name:'Beta',group_id:'2'});assert.equal(a.success,true);assert.equal(b.success,true);
+post('submitParticipant',{participant_id:'p-one',name:'Alpha',group_id:'2'});
+let dash=post('getDashboardData');assert.equal(dash.data.participantCount,2);assert.equal(dash.data.groupCount,1);assert.equal(dash.data.groups[0].count,2);
+for(const secret of ['spreadsheetUrl','ADMIN_ACCESS_KEY','original','Alpha','Beta',token])assert(!JSON.stringify(dash).includes(secret));
+const settings=post('adminGetSettings',{},token).data;
+const payload={revision:settings.revision,title:'共學測試',spreadsheetUrl:'https://docs.google.com/spreadsheets/d/replacement/edit',submissionsOpen:false};
+fail(post('adminSaveSettings',{...payload,spreadsheetUrl:'https://evil.example/spreadsheets/d/replacement'},token),'INVALID_SHEET_URL');assert.equal(props.get('SPREADSHEET_ID'),'original');
+const bad=books.get('bad').insertSheet('participants');bad.rows=[['wrong']];
+fail(post('adminSaveSettings',{...payload,spreadsheetUrl:'https://docs.google.com/spreadsheets/d/bad/edit'},token),'SCHEMA_MISMATCH');assert.equal(props.get('SPREADSHEET_ID'),'original');assert.equal(books.get('bad').sheets.size,1);
+let save=post('adminSaveSettings',payload,token);assert.equal(save.success,true);assert.equal(props.get('SPREADSHEET_ID'),'replacement');assert.equal(books.get('replacement').sheets.size,13);
+fail(post('adminSaveSettings',payload,token),'CONFLICT');
+fail(post('submitParticipant',{participant_id:'p-three',name:'Gamma',group_id:'1'}),'ACTIVITY_PAUSED');
+save=post('adminSaveSettings',{...payload,revision:save.data.revision,submissionsOpen:true},token);assert.equal(save.success,true);
+assert.equal(post('submitParticipant',{participant_id:'p-three',name:'Gamma',group_id:'1'}).success,true);
+assert.equal(post('getDashboardData').data.participantCount,1);assert.equal(books.get('original').getSheetByName('participants').getLastRow(),4);
+assert.equal(post('adminLogout',{},token).success,true);fail(post('adminGetSettings',{},token),'UNAUTHORIZED');
+login=post('adminLogin',{password:'a'.repeat(40)});now+=3601000;fail(post('adminGetSettings',{},login.data.token),'UNAUTHORIZED');
+login=post('adminLogin',{password:'a'.repeat(40)});props.set('ADMIN_ACCESS_KEY','b'.repeat(40));fail(post('adminGetSettings',{},login.data.token),'UNAUTHORIZED');
+assert.equal(locked,false);console.log('PASS: authorization, throttle, expiry, logout, credential rotation, privacy, shared participants, schema checks, switch preservation, revision conflict, pause/resume.');
+module.exports={post,props};

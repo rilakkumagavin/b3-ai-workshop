@@ -1,5 +1,15 @@
 # B3 AI 教學導航任務站
 
+## 2026-09-15 互動共學新版
+
+已加入共學大廳、後端驗證的主持人控制台、共用試算表設定、開放／暫停提交，以及成果自動更新。請以 [新版部署說明](DEPLOYMENT.md) 為準；下方保留早期靜態示範紀錄。
+
+網站來源為根目錄 `generate.py`、`assets/js/`、`styles.css` 與 `app.js`。執行 `python generate.py` 會同步產生根目錄與 `dist/` 網頁。後端使用 `project-backup/apps_script/Code.gs` 與 `admin-api.gs`。
+
+執行 `node tests/backend.cjs` 可檢查後端；`node tests/preview-server.cjs` 提供隔離模擬預覽。新版尚未推送或部署到正式 Google／GitHub 網站。
+
+---
+
 純 HTML、CSS、原生 JavaScript 的八頁靜態示範網站，沒有後端或建置依賴。
 
 ## 使用方式
